@@ -15,7 +15,6 @@ import {
   CalendarDays,
   ChevronLeft,
   ChevronRight,
-  CircleDot,
   ExternalLink,
   Link2,
   Maximize2,
@@ -907,7 +906,7 @@ export default function TimelineExplorer({ data, onRefresh }: { data: TimelinePa
           <section className="event-monitor">
             <div className="monitor-toolbar">
               <div className="monitor-identity">
-                <CircleDot className="size-3.5 text-[#e8a951]" />
+                <img className="monitor-logo" src={`${import.meta.env.BASE_URL}logo.png`} alt="" aria-hidden="true" />
                 <span>Conflict timeline</span>
                 <span className="monitor-divider" />
                 <span>{data.events.length} records</span>

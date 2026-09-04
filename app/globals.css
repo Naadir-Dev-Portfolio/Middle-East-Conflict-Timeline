@@ -139,6 +139,7 @@
 }
 
 .monitor-identity span:first-of-type { color: #b8bbc1; }
+.monitor-logo { width: 22px; height: 22px; flex: none; object-fit: contain; }
 .monitor-divider { width: 1px; height: 10px; background: rgba(255, 255, 255, .12); }
 .monitor-actions button { color: #727985; }
 .monitor-actions button:hover { color: white; background: rgba(255, 255, 255, .06); }
