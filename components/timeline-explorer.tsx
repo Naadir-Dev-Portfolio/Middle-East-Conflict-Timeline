@@ -47,7 +47,7 @@ import {
 } from '@/components/ui/resizable';
 import type { TimelineEvent, TimelineMediaItem, TimelinePayload } from '@/lib/timeline-types';
 import {
-  adjacentEventIndex, clamp, dayAtX, packCards, rulerScale, scaleForSpan, xAtDay,
+  adjacentEventIndex, clamp, dayAtX, packCards, pinchScale, rulerScale, scaleForSpan, xAtDay,
   MAX_TIMELINE_SCALE, MIN_READING_SCALE, MAX_READING_SCALE, stepReadingScale,
 } from '@/lib/timeline-math';
 import { useTimelineCamera } from '@/lib/use-timeline-camera';
@@ -66,7 +66,8 @@ type ThemeLane = {
   match: string[];
 };
 
-type DragMode = 'none' | 'pan' | 'zoom';
+type DragMode = 'none' | 'pan' | 'zoom' | 'pinch';
+type TouchPoint = { x: number; y: number };
 
 const DAY_MS = 86_400_000;
 const RULER_HEIGHT = 64;
@@ -388,8 +389,16 @@ export default function TimelineExplorer({ data, onRefresh }: { data: TimelinePa
   const selectEventRef = useRef<
     ((event: TimelineEvent, reveal?: boolean, openDetails?: boolean) => void) | null
   >(null);
+  const touchPointsRef = useRef(new Map<number, TouchPoint>());
+  const pinchRef = useRef({
+    active: false,
+    startDistance: 1,
+    startScale: 6,
+    anchorDay: 0,
+  });
   const dragRef = useRef({
     active: false,
+    pointerId: null as number | null,
     mode: 'none' as DragMode,
     startX: 0,
     startCenterDay: 0,
@@ -699,17 +708,51 @@ export default function TimelineExplorer({ data, onRefresh }: { data: TimelinePa
     }
   }
 
+  function currentPinchGeometry() {
+    const [first, second] = Array.from(touchPointsRef.current.values());
+    if (!first || !second) return null;
+    return {
+      distance: Math.max(1, Math.hypot(second.x - first.x, second.y - first.y)),
+      clientX: (first.x + second.x) / 2,
+    };
+  }
+
   function handlePointerDown(event: ReactPointerEvent<HTMLDivElement>) {
     if (event.button !== 0) return;
     const target = event.target as HTMLElement;
     if (target.closest('button, a, input')) return;
     const scroller = scrollerRef.current;
     if (!scroller) return;
+
+    if (event.pointerType === 'touch') {
+      if (touchPointsRef.current.size >= 2) return;
+      touchPointsRef.current.set(event.pointerId, { x: event.clientX, y: event.clientY });
+      event.currentTarget.setPointerCapture(event.pointerId);
+      const pinch = currentPinchGeometry();
+      if (pinch) {
+        const bounds = scroller.getBoundingClientRect();
+        const anchorViewportX = pinch.clientX - bounds.left;
+        pinchRef.current = {
+          active: true,
+          startDistance: pinch.distance,
+          startScale: cameraRef.current.scale,
+          anchorDay: dayAtX(cameraRef.current, anchorViewportX),
+        };
+        dragRef.current.active = false;
+        dragRef.current.pointerId = null;
+        dragRef.current.mode = 'none';
+        setDragMode('pinch');
+        event.preventDefault();
+        return;
+      }
+    }
+
     const bounds = scroller.getBoundingClientRect();
     const isRuler = Boolean(target.closest('[data-ruler]'));
     const anchorViewportX = event.clientX - bounds.left;
     dragRef.current = {
       active: true,
+      pointerId: event.pointerId,
       mode: isRuler ? 'zoom' : 'pan',
       startX: event.clientX,
       startCenterDay: cameraRef.current.centerDay,
@@ -721,18 +764,39 @@ export default function TimelineExplorer({ data, onRefresh }: { data: TimelinePa
       anchorViewportX,
     };
     setDragMode(isRuler ? 'zoom' : 'pan');
-    event.currentTarget.setPointerCapture(event.pointerId);
+    if (!event.currentTarget.hasPointerCapture(event.pointerId)) {
+      event.currentTarget.setPointerCapture(event.pointerId);
+    }
   }
 
   function handlePointerMove(event: ReactPointerEvent<HTMLDivElement>) {
-    const drag = dragRef.current;
     const scroller = scrollerRef.current;
-    if (!drag.active || !scroller) return;
+    if (!scroller) return;
+
+    if (event.pointerType === 'touch' && touchPointsRef.current.has(event.pointerId)) {
+      touchPointsRef.current.set(event.pointerId, { x: event.clientX, y: event.clientY });
+      const pinch = pinchRef.current;
+      const geometry = currentPinchGeometry();
+      if (pinch.active && geometry) {
+        const midpointX = geometry.clientX - scroller.getBoundingClientRect().left;
+        zoomAtViewportPoint(
+          pinchScale(pinch.startScale, pinch.startDistance, geometry.distance),
+          midpointX,
+          pinch.anchorDay,
+        );
+        event.preventDefault();
+        return;
+      }
+    }
+
+    const drag = dragRef.current;
+    if (!drag.active || drag.pointerId !== event.pointerId) return;
     const distance = event.clientX - drag.startX;
     if (Math.abs(distance) > 3 || Math.abs(event.clientY - drag.startY) > 3) drag.moved = true;
     if (drag.mode === 'zoom') {
       const nextScale = rulerScale(drag.startPixelsPerDay, distance);
       zoomAtViewportPoint(nextScale, drag.anchorViewportX, drag.anchorDay);
+      event.preventDefault();
       return;
     }
     commitCamera({
@@ -740,13 +804,48 @@ export default function TimelineExplorer({ data, onRefresh }: { data: TimelinePa
       centerDay: clamp(drag.startCenterDay - distance / drag.startPixelsPerDay, 0, totalDays),
     });
     scroller.scrollTop = drag.scrollTop - (event.clientY - drag.startY);
+    if (event.pointerType === 'touch') event.preventDefault();
   }
 
   function handlePointerUp(event: ReactPointerEvent<HTMLDivElement>) {
+    const wasTrackedTouch = event.pointerType === 'touch' && touchPointsRef.current.delete(event.pointerId);
+    if (wasTrackedTouch && pinchRef.current.active) {
+      pinchRef.current.active = false;
+      const scroller = scrollerRef.current;
+      const remaining = touchPointsRef.current.entries().next().value as [number, TouchPoint] | undefined;
+      if (remaining && scroller) {
+        const [pointerId, point] = remaining;
+        dragRef.current = {
+          active: true,
+          pointerId,
+          mode: 'pan',
+          startX: point.x,
+          startCenterDay: cameraRef.current.centerDay,
+          startY: point.y,
+          scrollTop: scroller.scrollTop,
+          moved: true,
+          startPixelsPerDay: cameraRef.current.scale,
+          anchorDay: 0,
+          anchorViewportX: 0,
+        };
+        setDragMode('pan');
+      } else {
+        dragRef.current.active = false;
+        dragRef.current.pointerId = null;
+        dragRef.current.mode = 'none';
+        setDragMode('none');
+      }
+      if (event.currentTarget.hasPointerCapture(event.pointerId)) {
+        event.currentTarget.releasePointerCapture(event.pointerId);
+      }
+      return;
+    }
+
     const drag = dragRef.current;
-    if (!drag.active) return;
+    if (!drag.active || drag.pointerId !== event.pointerId) return;
     if (!drag.moved && event.type !== 'pointercancel') selectCalendarDate(event.clientX);
     drag.active = false;
+    drag.pointerId = null;
     drag.mode = 'none';
     setDragMode('none');
     if (event.currentTarget.hasPointerCapture(event.pointerId)) {
@@ -1122,7 +1221,11 @@ export default function TimelineExplorer({ data, onRefresh }: { data: TimelinePa
           </section>
         </ResizablePanel>
 
-        <ResizableHandle className="editor-divider" />
+        <ResizableHandle
+          className="editor-divider"
+          aria-label="Resize the event preview and timeline"
+          title="Drag up or down to resize the preview and timeline"
+        />
 
         <ResizablePanel id="timeline" defaultSize="60%" minSize="30%">
           <section
@@ -1130,7 +1233,7 @@ export default function TimelineExplorer({ data, onRefresh }: { data: TimelinePa
             style={{ '--card-scale': cardScale, '--card-height': `${cardHeight}px` } as CSSProperties}
           >
             <div className="timeline-toolbar">
-              <div className="country-filters hide-scrollbar">
+              <div className="country-filters" aria-label="Filter by country or region">
                 {REGIONS.map((region) => (
                   <button
                     type="button"
@@ -1335,7 +1438,7 @@ export default function TimelineExplorer({ data, onRefresh }: { data: TimelinePa
                 data-center-day={camera.centerDay}
                 data-scale={pixelsPerDay}
                 data-viewport-width={camera.width}
-                aria-label="Interactive calendar timeline"
+                aria-label="Interactive calendar timeline. Drag to pan and pinch with two fingers to zoom."
               >
                 <div
                   className="timeline-canvas"

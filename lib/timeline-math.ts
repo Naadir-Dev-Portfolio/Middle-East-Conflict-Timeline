@@ -69,6 +69,18 @@ export function rulerScale(startScale: number, distance: number) {
   return startScale * Math.exp(distance / 520);
 }
 
+/** Convert a two-pointer distance change into a direct, reversible zoom. */
+export function pinchScale(startScale: number, startDistance: number, currentDistance: number) {
+  if (!Number.isFinite(startDistance) || !Number.isFinite(currentDistance) || startDistance <= 0 || currentDistance <= 0) {
+    return startScale;
+  }
+  return clamp(
+    startScale * currentDistance / startDistance,
+    MIN_TIMELINE_SCALE,
+    MAX_TIMELINE_SCALE,
+  );
+}
+
 export function scaleForSpan(width: number, days: number, padding = 64) {
   return clamp(
     Math.max(1, width - padding) / Math.max(1, days),

@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
   adjacentEventIndex, dayAtX, xAtDay, zoomCamera, panCamera, wheelScale, rulerScale,
-  scaleForSpan, packCards, MIN_TIMELINE_SCALE, MAX_TIMELINE_SCALE,
+  pinchScale, scaleForSpan, packCards, MIN_TIMELINE_SCALE, MAX_TIMELINE_SCALE,
   MIN_READING_SCALE, MAX_READING_SCALE, stepReadingScale,
 } from '../lib/timeline-math.ts';
 
@@ -73,6 +73,22 @@ test('ruler scrub anchors to pointer-down and reverses exactly', () => {
     close(dayAtX(next, x), day);
     if (distance === 0) close(next.centerDay, start.centerDay);
   }
+});
+
+test('pinch zoom follows finger spacing, reverses exactly and respects scale limits', () => {
+  assert.equal(pinchScale(8, 100, 50), 4);
+  assert.equal(pinchScale(8, 100, 200), 16);
+  assert.equal(pinchScale(pinchScale(8, 100, 175), 175, 100), 8);
+  assert.equal(pinchScale(8, 0, 200), 8);
+  assert.equal(pinchScale(8, 100, 1e9), MAX_TIMELINE_SCALE);
+  assert.equal(pinchScale(8, 100, 0.0001), MIN_TIMELINE_SCALE);
+
+  const camera = { centerDay: 930, width: 390, scale: 8 };
+  const startMidpoint = 118;
+  const anchorDay = dayAtX(camera, startMidpoint);
+  const movedMidpoint = 196;
+  const zoomed = zoomCamera(camera, pinchScale(camera.scale, 120, 72), movedMidpoint, anchorDay);
+  close(dayAtX(zoomed, movedMidpoint), anchorDay);
 });
 
 test('scale limits, line-wheel normalization and gentle single-notch zoom', () => {
