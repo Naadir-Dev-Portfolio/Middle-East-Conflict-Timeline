@@ -1,0 +1,52 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { createServer } from 'node:http';
+import { mkdtempSync, writeFileSync, unlinkSync, rmdirSync, existsSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+import { timelineFileMiddleware } from '../lib/timeline-server.mjs';
+
+test('the local endpoint rereads one file, supports conditional requests, and never writes data', async t => {
+  const directory = mkdtempSync(join(tmpdir(), 'timeline-endpoint-test-'));
+  const file = join(directory, 'timeline.json');
+  const original = JSON.stringify({ events: [] });
+  writeFileSync(file, original);
+  const middleware = timelineFileMiddleware(file);
+  const server = createServer((request, response) => middleware(request, response, () => response.writeHead(404).end()));
+  t.after(async () => {
+    if (server.listening) await new Promise(resolve => server.close(resolve));
+    if (existsSync(file)) unlinkSync(file);
+    rmdirSync(directory);
+  });
+  await new Promise((resolve, reject) => {
+    server.once('error', reject);
+    server.listen(0, '127.0.0.1', resolve);
+  });
+  const origin = `http://127.0.0.1:${server.address().port}`;
+  const first = await fetch(`${origin}/timeline.json`);
+  assert.equal(first.status, 200);
+  assert.equal(await first.text(), original);
+  const etag = first.headers.get('etag');
+  assert(etag);
+  assert.equal(first.headers.get('cache-control'), 'no-cache');
+  const unchanged = await fetch(`${origin}/timeline.json`, { headers: { 'If-None-Match': etag } });
+  assert.equal(unchanged.status, 304);
+  assert.equal(await unchanged.text(), '');
+  const updated = JSON.stringify({ events: [{ id: 'new', date_start: '2030-01-01', title: 'Test fixture' }] });
+  writeFileSync(file, updated);
+  const changed = await fetch(`${origin}/timeline.json`, { headers: { 'If-None-Match': etag } });
+  assert.equal(changed.status, 200);
+  assert.equal(await changed.text(), updated);
+  assert.notEqual(changed.headers.get('etag'), etag);
+  const head = await fetch(`${origin}/timeline.json`, { method: 'HEAD' });
+  assert.equal(head.status, 200);
+  assert.equal(await head.text(), '');
+  assert.equal(Number(head.headers.get('content-length')), Buffer.byteLength(updated));
+  const post = await fetch(`${origin}/timeline.json`, { method: 'POST', body: 'must not be written' });
+  assert.equal(post.status, 405);
+  assert.equal(post.headers.get('allow'), 'GET, HEAD');
+  assert.equal(await (await fetch(`${origin}/timeline.json?refresh=1`)).text(), updated);
+  assert.equal((await fetch(`${origin}/package.json`)).status, 404);
+  unlinkSync(file);
+  assert.equal((await fetch(`${origin}/timeline.json`)).status, 503);
+});
