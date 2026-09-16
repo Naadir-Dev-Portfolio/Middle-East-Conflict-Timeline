@@ -4,7 +4,7 @@
   "description": "Detailed coverage from 2026-02-28 onward, with major precursor events from 2020 onward and expanded Israel/Palestine/Lebanon/Yemen context.",
   "granularity": "Major independently verifiable escalation, retaliation, diplomatic, legal, maritime, leadership, ceasefire and deadline events; not missile-by-missile.",
   "timezone": "Europe/London",
-  "updated_at": "2026-09-03",
+  "updated_at": "2026-09-16",
   "calendar_end": "2028-12-31",
   "initial_event_id": "2026-02-28-us-israel-war-begins",
   "methodology_notes": [
@@ -9959,6 +9959,448 @@
       "search_aliases": ["energy crisis", "gasoline reserves", "petrol shortages", "Iran oil exports", "foreign currency", "secondary sanctions"],
       "reviewed_at": "2026-09-03",
       "research_note": "A dated reporting milestone using two different Reuters reports, not two independent news organizations. The anonymous officials' assessments and fuel-reserve estimate remain attributed. No prediction that sanctions will force an agreement is adopted."
+    },
+    {
+      "id": "2026-09-06-kuhestak-wedding-strike-likely-us-miss",
+      "date_start": "2026-09-06",
+      "title": "On-scene and weapons reporting point to a likely U.S. miss in the Kuhestak wedding strike",
+      "summary": "Associated Press and Washington Post reporting added important detail to the Kuhestak wedding strike: AP described a rare visit to the damaged compound and a fifth reported death, while the Post reported that a U.S. bomb probably missed a nearby communications target.",
+      "context": "This is a follow-up evidentiary milestone, not a separate strike. It matters because the incident shifted from an attributed Iranian casualty report toward a more detailed civilian-harm investigation involving U.S. munitions, target selection and distance from the intended tower.",
+      "details": [
+        "AP reported from Kuhestak after visiting the Mallahi family compound, describing roughly 150 women gathered for a wedding celebration, a direct hit through the roof of one room, and local accounts that most of the wounded were children. The AP account said a fifth person, one of the wounded women, had died in hospital.",
+        "The Washington Post, citing a person familiar with the operation and visual verification, reported that six Navy-dropped bombs targeted a communications complex and that one appeared to go astray, striking the home about 440 feet from the tower. CENTCOM said it was looking into reports of civilian casualties and said the U.S. military does not target civilians."
+      ],
+      "theatres": ["Iran", "Kuhestak", "Sirik", "Hormozgan", "Strait of Hormuz"],
+      "actors": ["United States", "U.S. Central Command", "Iran", "Associated Press", "Washington Post", "Iranian Red Crescent Society"],
+      "category": ["civilian_casualties", "airstrike", "investigation", "children"],
+      "verification": "attribution_disputed",
+      "importance": 5,
+      "theme": "military",
+      "sources": [
+        {
+          "publisher": "Associated Press via Washington Post — rare Kuhestak visit",
+          "url": "https://www.washingtonpost.com/world/2026/09/04/iran-war-wedding-us-strikes/856ffc0c-a87f-11f1-9e38-f705d048bd5a_story.html"
+        },
+        {
+          "publisher": "Washington Post — weapons and visual analysis",
+          "url": "https://www.washingtonpost.com/world/2026/09/06/deadly-iran-wedding-strike-likely-due-us-weapon-missing-nearby-target/"
+        }
+      ],
+      "relationships": [
+        {
+          "to": "2026-09-01-kuhestak-wedding-strike",
+          "type": "contextual_thread",
+          "label": "Follow-up reporting on the same civilian-harm incident",
+          "summary": "The later reporting refines the casualty and weapons picture for the 1 September Kuhestak strike without creating a second attack event.",
+          "confidence": "documented"
+        }
+      ],
+      "search_aliases": ["Kuhestak investigation", "JSOW", "wedding strike follow-up", "missed bomb", "communications tower"],
+      "reviewed_at": "2026-09-16",
+      "research_note": "The AP visit and Washington Post analysis were both read. The event preserves attribution and investigation limits; it does not assert a final legal finding or intentional targeting."
+    },
+    {
+      "id": "2026-09-06-iran-plans-hormuz-exclusion-zone",
+      "date_start": "2026-09-06",
+      "title": "Iran signals a new exclusion zone as the U.S. denies a sea-drone hit",
+      "summary": "Iranian officials said Tehran planned to announce an exclusion zone outside the Strait of Hormuz for vessels it considered part of the U.S.-backed transit effort. The same reporting captured a disputed Iranian claim that it had struck an uncrewed U.S. vessel, which CENTCOM called false.",
+      "context": "The exclusion-zone signal was a maritime-policy escalation even if the exact boundary and enforcement rules were not yet public. It fits the pattern of using legal and military pressure to shape tanker movement through Hormuz.",
+      "details": [
+        "Associated Press reporting carried through the Washington Post quoted Iran's Supreme National Security Council head saying Tehran intended to announce a zone aimed at vessels it believed were trying to transit Hormuz under U.S. arrangements.",
+        "Iranian state media also claimed a U.S. uncrewed vessel had been hit in the strait; CENTCOM spokesperson Capt. Tim Hawkins denied the claim. The denial does not remove the significance of Iran's planned exclusion-zone messaging."
+      ],
+      "theatres": ["Iran", "United States", "Strait of Hormuz", "Persian Gulf"],
+      "actors": ["Iran", "U.S. Central Command", "United States", "Iranian Supreme National Security Council"],
+      "category": ["maritime", "official_claim", "naval_blockade", "restricted_zone"],
+      "verification": "attribution_disputed",
+      "importance": 4,
+      "theme": "energy",
+      "sources": [
+        {
+          "publisher": "Associated Press via Washington Post",
+          "url": "https://www.washingtonpost.com/national/2026/09/06/mideast-iran-us-hormuz-lebanon-israel/5a44a80e-a9d6-11f1-b498-8697f35a6743_story.html"
+        }
+      ],
+      "relationships": [
+        {
+          "to": "2026-08-28-irgc-full-control-hormuz",
+          "type": "contextual_thread",
+          "label": "Follow-on maritime-control signal",
+          "summary": "The exclusion-zone plan extends earlier Iranian claims of control over Hormuz into a proposed enforcement framework.",
+          "confidence": "documented"
+        }
+      ],
+      "search_aliases": ["exclusion zone", "restricted zone", "uncrewed vessel", "sea drone denial", "Hormuz zone"],
+      "reviewed_at": "2026-09-16",
+      "research_note": "No final coordinates, legal notice or enforcement record was found in the cited report. The sea-drone damage claim remains disputed and is not treated as verified."
+    },
+    {
+      "id": "2026-09-10-oil-crosses-100-renewed-attacks",
+      "date_start": "2026-09-10",
+      "title": "Oil returns above $100 as renewed U.S.-Iran and Houthi attacks hit energy confidence",
+      "summary": "Brent crude settled above $100 a barrel for the first time since July after new attacks on oil facilities and ships in the Middle East. AP tied the move to intensified U.S.-Iran fighting and Houthi pressure on Saudi alternatives to Hormuz.",
+      "context": "This is an energy-market milestone rather than a single battlefield action. It shows that the conflict was again transmitting into global inflation and fuel costs after the summer diplomacy and shipping workarounds failed to stabilize supply risk.",
+      "details": [
+        "AP reported Brent settling at $101.21 while U.S. crude closed near $96.05. The article linked the jump to attacks on ships and oil facilities, the constrained Strait of Hormuz, and fresh threats against alternative Red Sea routes.",
+        "The same report noted U.S. gasoline averaging $4.22 a gallon and diesel at a record $5.94, illustrating how the maritime conflict was reaching consumer costs beyond the Gulf."
+      ],
+      "theatres": ["Global energy markets", "United States", "Iran", "Strait of Hormuz", "Saudi Arabia", "Red Sea"],
+      "actors": ["United States", "Iran", "Houthis", "Saudi Arabia", "Associated Press"],
+      "category": ["energy", "oil_prices", "economic_pressure", "maritime"],
+      "verification": "confirmed",
+      "importance": 4,
+      "theme": "energy",
+      "sources": [
+        {
+          "publisher": "Associated Press via AOL — oil price milestone",
+          "url": "https://www.aol.com/articles/oil-rises-past-100-barrel-090851000.html"
+        }
+      ],
+      "relationships": [
+        {
+          "to": "2026-09-03-iran-financial-squeeze-reuters-report",
+          "type": "contextual_thread",
+          "label": "Economic pressure broadens",
+          "summary": "The 3 September entry focused on Iranian financial strain; this entry records the wider global energy-price spillover.",
+          "confidence": "documented"
+        }
+      ],
+      "search_aliases": ["Brent 100", "oil above $100", "energy crisis", "gas prices", "diesel"],
+      "reviewed_at": "2026-09-16",
+      "research_note": "Market prices are dated to the report's Wednesday settlement and updated publication time. This entry avoids duplicating individual attacks that are recorded elsewhere."
+    },
+    {
+      "id": "2026-09-10-houthis-take-mokha-bab-el-mandeb",
+      "date_start": "2026-09-10",
+      "date_end": "2026-09-11",
+      "precision": "Mokha reported 10 September; Mayun Island advance reported the following day",
+      "title": "Houthis seize Mokha and press toward the Bab el-Mandeb shipping route",
+      "summary": "Iran-backed Houthi forces took Yemen's port city of Mokha and then captured strategic ground near the Bab el-Mandeb, creating a second major maritime pressure point alongside Hormuz.",
+      "context": "This was not merely another Yemen battlefield update. Mokha and Mayun matter because Saudi Arabia had relied on Red Sea export routes while Hormuz remained dangerous, and the Houthi advance raised the risk that both oil chokepoints could be pressured at once.",
+      "details": [
+        "AP reported from Aden and Cairo that Houthi and Yemeni officials confirmed the takeover of Mokha, about 80 kilometers from the Bab el-Mandeb Strait. The report described Mokha as the Houthis' biggest territorial gain since the 2022 truce.",
+        "Follow-up AP reporting carried by public radio described the capture of a strategic island at the southern entrance to the Red Sea and Saudi strikes around the port. The combined advance threatened shipping through a route that normally carries roughly 12% of world goods."
+      ],
+      "theatres": ["Yemen", "Mokha", "Mayun Island", "Bab el-Mandeb", "Red Sea", "Saudi Arabia"],
+      "actors": ["Houthis", "Yemen government", "Saudi Arabia", "Iran", "United States", "United Nations"],
+      "category": ["military", "maritime", "shipping_attack", "proxy_conflict", "energy"],
+      "verification": "confirmed",
+      "importance": 5,
+      "theme": "energy",
+      "sources": [
+        {
+          "publisher": "Associated Press via Local10 — Mokha takeover",
+          "url": "https://www.local10.com/news/world/2026/09/10/iran-backed-houthi-rebels-take-strategic-port-city-in-yemen-raising-threat-to-red-sea-shipping/"
+        },
+        {
+          "publisher": "Associated Press via KNKX — island and wider front",
+          "url": "https://www.knkx.org/2026-09-10/iran-backed-houthi-rebels-seize-a-strategic-port-and-island-opening-a-new-battlefront"
+        }
+      ],
+      "relationships": [
+        {
+          "to": "2026-07-20-trump-vows-revenge-houthi-blockade",
+          "type": "escalation",
+          "label": "Houthi Saudi-blockade threat becomes territorial leverage",
+          "summary": "The July Houthi blockade announcement becomes more consequential once the group captures positions affecting Red Sea access.",
+          "confidence": "documented"
+        }
+      ],
+      "search_aliases": ["Mokha", "Mocha", "Mayun", "Perim", "Bab el-Mandeb", "Houthi port"],
+      "reviewed_at": "2026-09-16",
+      "research_note": "The Mokha record rests on AP reporting citing both Houthi and Yemeni-government-side confirmation. The exact operational boundary of control around Mayun and the port remained developing."
+    },
+    {
+      "id": "2026-09-12-saudi-east-west-pipeline-attack-origin-iraq",
+      "date_start": "2026-09-12",
+      "title": "Iraq says the Saudi East-West pipeline attack came from Iraqi territory",
+      "summary": "Iraq acknowledged that drones used in attacks on Saudi Arabia's East-West oil pipeline had been launched from Iraqi territory. Saudi Arabia kept the pipeline shut while saying it would give Baghdad a chance to act.",
+      "context": "The pipeline is Saudi Arabia's key land route from the Gulf to the Red Sea and had become more important while Hormuz was contested. The reported Iraqi launch point widened the crisis beyond direct U.S.-Iran exchanges and raised questions about militia activity inside Iraq.",
+      "details": [
+        "AP reported that Saudi Arabia blamed drones launched from Iraq and said it would not retaliate immediately. The East-West pipeline had become vital to Saudi exports because Hormuz traffic remained disrupted by the Iran war.",
+        "The same regional update reported that a large oil spill believed to be from a tanker struck by the U.S. military had doubled in size between Wednesday and Thursday, adding an environmental dimension to the maritime campaign."
+      ],
+      "theatres": ["Saudi Arabia", "Iraq", "Red Sea", "Strait of Hormuz", "Gulf of Oman"],
+      "actors": ["Saudi Arabia", "Iraq", "Iran-backed militias", "United States", "Greenpeace Germany"],
+      "category": ["energy", "drone_attack", "pipeline", "proxy_conflict", "environment"],
+      "verification": "official_claim",
+      "importance": 5,
+      "theme": "energy",
+      "sources": [
+        {
+          "publisher": "Associated Press — 12 September regional update",
+          "url": "https://apnews.com/article/324485fad65647d4a897d5bfdcb7849c"
+        },
+        {
+          "publisher": "Financial Times — pipeline closure and oil-price impact",
+          "url": "https://www.ft.com/content/4845a503-3ddd-4bb7-a469-c51f275bc873"
+        }
+      ],
+      "relationships": [
+        {
+          "to": "2026-09-10-houthis-take-mokha-bab-el-mandeb",
+          "type": "contextual_thread",
+          "label": "Saudi alternate export routes come under pressure",
+          "summary": "The Red Sea route was simultaneously threatened by Houthi territorial gains and by attacks affecting the Saudi pipeline that feeds Yanbu.",
+          "confidence": "documented"
+        }
+      ],
+      "search_aliases": ["East-West pipeline", "Saudi pipeline attack", "Iraq drones", "Yanbu", "Petroline"],
+      "reviewed_at": "2026-09-16",
+      "research_note": "The launch-origin finding is attributed to Iraqi/Saudi accounts in AP reporting. The FT source was used for the reported market and shutdown context, not as independent verification of every operational detail."
+    },
+    {
+      "id": "2026-09-12-us-limits-hormuz-air-defense-windows",
+      "date_start": "2026-09-12",
+      "title": "U.S. narrows Hormuz tanker protection to scheduled air-defense windows",
+      "summary": "The United States shifted tanker protection in the Strait of Hormuz toward specific transit windows rather than continuous air cover. The change reflected the resource strain of escorting commerce through an active maritime conflict.",
+      "context": "The policy change helps explain why the strait could be partly reopened while remaining fragile. It also gives future updates a concrete operating model to compare against if shipping volume rises or another attack occurs outside the protected windows.",
+      "details": [
+        "Financial Times reporting described U.S. air-defense coverage being concentrated into time slots and said tankers were encouraged to transit during designated periods. The report linked the adjustment to Iranian nighttime attacks and the cost of continuous coverage.",
+        "The change fits AP reporting from the same period that U.S.-facilitated exports had increased but depended on a major military presence in and around the strait."
+      ],
+      "theatres": ["Strait of Hormuz", "United States", "Oman", "Iran", "Persian Gulf"],
+      "actors": ["United States", "U.S. Central Command", "Iran", "commercial tanker operators"],
+      "category": ["maritime", "energy", "air_defense", "shipping", "military"],
+      "verification": "confirmed",
+      "importance": 4,
+      "theme": "energy",
+      "sources": [
+        {
+          "publisher": "Financial Times",
+          "url": "https://www.ft.com/content/d4b4105e-d91f-48bb-820e-64290e916f5e"
+        },
+        {
+          "publisher": "Associated Press — Hormuz strategy analysis",
+          "url": "https://apnews.com/article/2b126da67b09de2f328846eb656abe0e"
+        }
+      ],
+      "relationships": [
+        {
+          "to": "2026-09-06-iran-plans-hormuz-exclusion-zone",
+          "type": "contextual_thread",
+          "label": "Competing control systems around Hormuz",
+          "summary": "Iran signalled exclusion rules while the U.S. narrowed protection into managed transit windows.",
+          "confidence": "documented"
+        }
+      ],
+      "search_aliases": ["air defense windows", "tanker time slots", "Hormuz escort", "scheduled transit"],
+      "reviewed_at": "2026-09-16",
+      "research_note": "The FT article is a paywalled source surfaced in search results; AP analysis corroborates the wider military-resource pressure but not each FT operational detail."
+    },
+    {
+      "id": "2026-09-13-qeshm-cargo-ship-struck-talks-postponed",
+      "date_start": "2026-09-13",
+      "title": "Iranian cargo ship is struck near Qeshm and regional Hormuz talks are postponed",
+      "summary": "Iranian state media said a cargo ship was struck near Qeshm Island, killing one and wounding four. A planned Oman-hosted meeting on Hormuz shipping arrangements was then postponed as Gulf states disputed the emerging Iran-Oman framework.",
+      "context": "The incident linked direct maritime violence to a diplomatic delay. Qeshm sits at the centre of Iran's Hormuz posture, so even a single cargo-ship attack carried larger signalling value during negotiations over shipping management.",
+      "details": [
+        "AP reported that the Qeshm governor blamed a 'terrorist enemy' for the attack and that there was no immediate U.S. comment. Trump declined to say whether the United States had struck the vessel.",
+        "The same report said Oman postponed a meeting meant to discuss joint management of shipping through Hormuz. Saudi Arabia had submitted amendments to the Iran-Oman agreement, citing concerns about long-term implications for Gulf Cooperation Council countries."
+      ],
+      "theatres": ["Iran", "Qeshm Island", "Strait of Hormuz", "Oman", "Saudi Arabia", "Gulf Cooperation Council"],
+      "actors": ["Iran", "United States", "Oman", "Saudi Arabia", "Gulf Cooperation Council"],
+      "category": ["maritime", "diplomacy", "shipping_attack", "energy"],
+      "verification": "attribution_disputed",
+      "importance": 4,
+      "theme": "diplomacy",
+      "sources": [
+        {
+          "publisher": "Associated Press — cargo ship and postponed talks",
+          "url": "https://apnews.com/article/aa034da0d8226f5a3b4794b10afb8b3b"
+        }
+      ],
+      "relationships": [
+        {
+          "to": "2026-09-12-us-limits-hormuz-air-defense-windows",
+          "type": "contextual_thread",
+          "label": "Hormuz shipping remains contested",
+          "summary": "The Qeshm strike and delayed talks underline that transit-management rules were still unsettled despite U.S. protection windows.",
+          "confidence": "documented"
+        }
+      ],
+      "search_aliases": ["Qeshm cargo ship", "Hormuz talks postponed", "Oman meeting", "Iran-Oman agreement"],
+      "reviewed_at": "2026-09-16",
+      "research_note": "The casualty and attribution details are Iranian official accounts in AP reporting. The U.S. role was not confirmed."
+    },
+    {
+      "id": "2026-09-15-us-destroys-iranian-boats-saildrone",
+      "date_start": "2026-09-15",
+      "title": "U.S. destroys two Iranian boats during attempted Saildrone seizure",
+      "summary": "CENTCOM said Iranian small boats tried to take possession of a U.S. unmanned surface vessel in waters off Iran and that U.S. forces destroyed the boats. Iranian reporting described the boats as coming under enemy-drone attack and did not acknowledge an attempted seizure.",
+      "context": "The clash is significant because it shows the contest over Hormuz moving into uncrewed maritime surveillance systems, not just tankers, aircraft and missiles.",
+      "details": [
+        "AP reported Capt. Tim Hawkins saying the Saildrone was a small, roughly 25-foot unmanned craft used to monitor maritime traffic and that all CENTCOM surface drones remained accounted for.",
+        "Hormozgan's deputy governor told IRNA that two boats were attacked Monday evening by an enemy drone. The divergent accounts are preserved because they imply different legal and operational narratives for the same incident."
+      ],
+      "theatres": ["Iran", "Persian Gulf", "Strait of Hormuz", "United States"],
+      "actors": ["U.S. Central Command", "Iran", "IRGC", "IRNA"],
+      "category": ["maritime", "military", "drone", "naval"],
+      "verification": "attribution_disputed",
+      "importance": 4,
+      "theme": "military",
+      "sources": [
+        {
+          "publisher": "Associated Press — Saildrone incident",
+          "url": "https://apnews.com/article/98b49e9a5e10452ae8da42191205ab53"
+        },
+        {
+          "publisher": "Axios — initial scoop",
+          "url": "https://www.axios.com/2026/09/15/us-iran-boats-navy-drone-strait-hormuz"
+        }
+      ],
+      "relationships": [
+        {
+          "to": "2026-09-06-iran-plans-hormuz-exclusion-zone",
+          "type": "contextual_thread",
+          "label": "Uncrewed systems become part of Hormuz enforcement contest",
+          "summary": "After competing claims over an uncrewed vessel on 6 September, the 15 September Saildrone incident produced a direct U.S. kinetic response.",
+          "confidence": "documented"
+        }
+      ],
+      "search_aliases": ["Saildrone", "sea drone", "unmanned surface vessel", "Iranian boats", "Kargan", "Larak"],
+      "reviewed_at": "2026-09-16",
+      "research_note": "AP and Axios accounts were checked. The Iranian account is treated as a competing attribution, not as confirmation that the boats were civilian fishing vessels."
+    },
+    {
+      "id": "2026-09-15-house-third-war-powers-vote-iran",
+      "date_start": "2026-09-15",
+      "title": "U.S. House votes for a third time to end the Iran war",
+      "summary": "The House passed another war-powers resolution, 220-204, seeking to halt Trump's authority to continue the Iran war without congressional approval. Seven Republicans joined Democrats, but the measure was still expected to face a veto barrier.",
+      "context": "This was likely the last House vote on the war before the midterms. It shows the conflict becoming a domestic political liability as casualties, fuel prices and war costs accumulate.",
+      "details": [
+        "AP reported that the House had previously approved similar measures in June and July and that none had reached the president's desk. The Senate had briefly approved a related measure before reversing course after pressure from Trump.",
+        "The report tied the vote to voter concern over gasoline prices and to CBO's estimate that the war had cost more than $38 billion through 1 August."
+      ],
+      "theatres": ["United States", "Iran", "Congress"],
+      "actors": ["U.S. House of Representatives", "Donald Trump", "Democratic Party", "Republican Party"],
+      "category": ["legal", "diplomacy", "domestic_politics", "war_powers"],
+      "verification": "confirmed",
+      "importance": 4,
+      "theme": "diplomacy",
+      "sources": [
+        {
+          "publisher": "Associated Press — House war-powers vote",
+          "url": "https://apnews.com/article/8519dae8197214b4edf2192e174c82f4"
+        }
+      ],
+      "relationships": [
+        {
+          "to": "2026-07-10-war-powers-notification",
+          "type": "contextual_thread",
+          "label": "Congress challenges the administration's war authority",
+          "summary": "The September vote continues the legal-political contest over the basis for sustained U.S. operations.",
+          "confidence": "documented"
+        }
+      ],
+      "search_aliases": ["war powers", "House vote", "220-204", "end Iran war", "Congress"],
+      "reviewed_at": "2026-09-16",
+      "research_note": "The event records passage in the House, not enactment into law. No assumption is made about Senate action or a presidential signature."
+    },
+    {
+      "id": "2026-09-16-cbo-iran-war-cost-38b",
+      "date_start": "2026-09-16",
+      "title": "CBO estimates the Iran war has cost more than $38 billion",
+      "summary": "The Congressional Budget Office estimated Defense Department costs above $38 billion through 1 August and projected continuing monthly costs of up to $3 billion or more depending on conflict intensity.",
+      "context": "The estimate is a major fiscal marker for the war and energy crisis. It excludes several long-term personnel and veterans' costs, so it is not a complete lifetime cost of the conflict.",
+      "details": [
+        "AP reported that CBO attributed much of the cost to replacing munitions and equipment and expected the war to add roughly 0.5 percentage points to inflation into early 2027.",
+        "The assessment largely aligned with Defense Secretary Pete Hegseth's prior $37.5 billion estimate but noted uncertainty because the Defense Department did not provide all requested data."
+      ],
+      "theatres": ["United States", "Iran", "Strait of Hormuz", "Red Sea"],
+      "actors": ["Congressional Budget Office", "U.S. Department of Defense", "Brendan Boyle", "Pete Hegseth"],
+      "category": ["economic_pressure", "budget", "inflation", "energy", "domestic_politics"],
+      "verification": "confirmed",
+      "importance": 4,
+      "theme": "energy",
+      "sources": [
+        {
+          "publisher": "Associated Press — CBO cost estimate",
+          "url": "https://apnews.com/article/b99089b11749f04bbc8ddb1b3c64a373"
+        }
+      ],
+      "relationships": [
+        {
+          "to": "2026-09-15-house-third-war-powers-vote-iran",
+          "type": "contextual_thread",
+          "label": "Fiscal cost feeds war-powers politics",
+          "summary": "The CBO estimate was cited in reporting on the congressional vote to end the conflict.",
+          "confidence": "documented"
+        }
+      ],
+      "search_aliases": ["CBO", "$38 billion", "war cost", "inflation", "Pentagon cost"],
+      "reviewed_at": "2026-09-16",
+      "research_note": "The estimate is through 1 August even though the AP report is dated 16 September. This distinction is preserved in the summary."
+    },
+    {
+      "id": "2026-09-16-saudi-mecca-drone-accusation-houthis-deny",
+      "date_start": "2026-09-16",
+      "title": "Saudi Arabia says it stopped a Houthi drone near Mecca; Houthis deny involvement",
+      "summary": "Saudi Arabia accused Yemen's Iran-backed Houthis of trying to attack Mecca and said a drone was intercepted before entering the holy city's airspace. The Houthis denied responsibility while Saudi officials sought more air-defense support.",
+      "context": "The claim significantly raised the political and religious stakes of the Red Sea front. Even without a confirmed hit, an alleged attack near Mecca shifted the Saudi-Houthi escalation from infrastructure and shipping into a symbolic red-line issue.",
+      "details": [
+        "AP reported Saudi Arabia calling Mecca a red line and saying the drone was destroyed before entering the city's airspace. The Organization of Islamic Cooperation condemned the reported attempt.",
+        "The same report said Saudi Arabia was seeking interceptor replenishment and possible allied air-defense teams from countries including France, Britain, Pakistan and Egypt. U.S. officials indicated they were in contact with the Saudis and Houthis but did not signal direct military entry into that front."
+      ],
+      "theatres": ["Saudi Arabia", "Mecca", "Yemen", "Red Sea", "Bab el-Mandeb"],
+      "actors": ["Saudi Arabia", "Houthis", "Organization of Islamic Cooperation", "United States", "Pakistan", "Turkey"],
+      "category": ["drone_attack", "proxy_conflict", "air_defense", "diplomacy", "religious_site"],
+      "verification": "attribution_disputed",
+      "importance": 5,
+      "theme": "military",
+      "sources": [
+        {
+          "publisher": "Associated Press — Mecca drone accusation",
+          "url": "https://apnews.com/article/895320bde6dc589cebb628b63832c38a"
+        }
+      ],
+      "relationships": [
+        {
+          "to": "2026-09-10-houthis-take-mokha-bab-el-mandeb",
+          "type": "escalation",
+          "label": "Saudi-Houthi front moves from maritime pressure to symbolic escalation",
+          "summary": "After Houthi territorial gains around Red Sea shipping routes, Saudi Arabia reported an attempted drone attack near Mecca.",
+          "confidence": "documented"
+        }
+      ],
+      "search_aliases": ["Mecca drone", "Makkah", "Houthi denial", "red line", "Saudi interceptors"],
+      "reviewed_at": "2026-09-16",
+      "research_note": "Saudi attribution and Houthi denial are both preserved. No independent wreckage analysis or flight path verification was located."
+    },
+    {
+      "id": "2026-09-16-us-plans-2-8b-israel-bomb-sale",
+      "date_start": "2026-09-16",
+      "title": "Trump administration plans $2.8 billion bomb sale to Israel",
+      "summary": "U.S. officials said the administration planned a $2.8 billion package for Israel including 40,000 2,000-pound bombs. The package came despite continued Gaza criticism and strains tied to the Iran war.",
+      "context": "The sale is significant because it reinforces the U.S.-Israel military relationship while the region is already dealing with Iran-war escalation, Gaza ceasefire fragility and wider international criticism of Israeli operations.",
+      "details": [
+        "AP reported that Congress had been informally notified and that the package would include 20,000 Mk84 and 20,000 BLU-117 bombs. The deal was not yet final at the time of reporting.",
+        "The article noted that the Biden administration had previously paused similar 2,000-pound bombs because of concerns over mass casualties in Gaza, while Trump had lifted that hold and approved additional Israel arms transfers after returning to office."
+      ],
+      "theatres": ["United States", "Israel", "Gaza", "Iran"],
+      "actors": ["United States", "Israel", "Donald Trump", "Benjamin Netanyahu", "U.S. Congress"],
+      "category": ["military_aid", "arms_sale", "gaza", "diplomacy"],
+      "verification": "confirmed",
+      "importance": 4,
+      "theme": "military",
+      "sources": [
+        {
+          "publisher": "Associated Press — planned Israel bomb sale",
+          "url": "https://apnews.com/article/eb48cb7ecf773ffc472fbafc995aef2a"
+        }
+      ],
+      "relationships": [
+        {
+          "to": "2026-02-28-us-israel-war-begins",
+          "type": "contextual_thread",
+          "label": "U.S.-Israel military alignment continues during Iran-war strains",
+          "summary": "The proposed bomb sale shows the alliance continuing despite reported Trump-Netanyahu friction over the Iran conflict.",
+          "confidence": "documented"
+        }
+      ],
+      "search_aliases": ["2.8 billion Israel bombs", "Mk84", "BLU-117", "2000-pound bombs", "arms sale"],
+      "reviewed_at": "2026-09-16",
+      "research_note": "The package was planned and informally notified, not finalized. The entry records policy significance rather than delivery of weapons."
     }
   ]
 }
