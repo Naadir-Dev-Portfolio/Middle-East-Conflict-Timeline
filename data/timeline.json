@@ -4,7 +4,7 @@
   "description": "Detailed coverage from 2026-02-28 onward, with major precursor events from 2020 onward and expanded Israel/Palestine/Lebanon/Yemen context.",
   "granularity": "Major independently verifiable escalation, retaliation, diplomatic, legal, maritime, leadership, ceasefire and deadline events; not missile-by-missile.",
   "timezone": "Europe/London",
-  "updated_at": "2026-09-16",
+  "updated_at": "2026-10-02",
   "calendar_end": "2028-12-31",
   "initial_event_id": "2026-02-28-us-israel-war-begins",
   "methodology_notes": [
@@ -10401,6 +10401,445 @@
       "search_aliases": ["2.8 billion Israel bombs", "Mk84", "BLU-117", "2000-pound bombs", "arms sale"],
       "reviewed_at": "2026-09-16",
       "research_note": "The package was planned and informally notified, not finalized. The entry records policy significance rather than delivery of weapons."
+    },
+    {
+      "id": "2026-09-17-un-experts-us-war-crimes-minab-lamerd",
+      "date_start": "2026-09-17",
+      "title": "UN-mandated experts find reasonable grounds of U.S. war crimes in Minab and Lamerd strikes",
+      "summary": "A UN-mandated fact-finding mission said there were reasonable grounds to believe U.S. forces committed war crimes in two opening-day Iran strikes, including the Minab school strike and a strike on a sports complex in Lamerd. The White House rejected the findings.",
+      "context": "This is a legal and evidentiary milestone for the earliest civilian-casualty events in the war. It does not create a court judgment, but it substantially changes the weight of the record around Minab and adds Lamerd as a major documented civilian-harm site.",
+      "details": [
+        "Axios, AP and Al Jazeera reported that the mission attributed the Minab school strike and the Lamerd sports-complex strike to U.S. forces on a reasonable-grounds standard. The mission cited satellite imagery, verified video, weapons analysis and witness accounts; the United States did not grant access to personnel or respond to the mission's requests.",
+        "The Minab strike had already been linked to U.S. weapons by previous investigations and preliminary U.S. military findings. The Lamerd attribution remained disputed by CENTCOM, which had argued the damage was consistent with an Iranian weapon; the mission rejected that explanation after weapons analysis."
+      ],
+      "theatres": ["Iran", "Minab", "Lamerd", "United Nations", "United States"],
+      "actors": ["United Nations Human Rights Council", "Independent International Fact-Finding Mission on Iran", "United States", "U.S. Central Command", "Iran"],
+      "category": ["legal", "civilian_casualties", "children", "war_crimes", "investigation"],
+      "verification": "legal_diplomatic",
+      "importance": 5,
+      "theme": "diplomacy",
+      "sources": [
+        {
+          "publisher": "Associated Press — UN-backed experts",
+          "url": "https://apnews.com/article/742e1eebb7d099ea42372d978e271900"
+        },
+        {
+          "publisher": "Axios — UN mission findings",
+          "url": "https://www.axios.com/2026/09/17/iran-war-crimes-un-mission-finds"
+        },
+        {
+          "publisher": "Al Jazeera — explainer on Minab and Lamerd findings",
+          "url": "https://www.aljazeera.com/news/2026/9/18/united-nations-says-us-may-have-committed-war-crimes-in-iran-what-it-means"
+        },
+        {
+          "publisher": "DW — UN mission notes possible war crimes",
+          "url": "https://amp.dw.com/en/un-mission-notes-possible-us-war-crimes-in-iran-strikes/a-79316385"
+        }
+      ],
+      "relationships": [
+        {
+          "to": "2026-02-28-minab-girls-school-strike",
+          "type": "contextual_thread",
+          "label": "Legal finding updates Minab record",
+          "summary": "The UN-mandated findings add a later legal assessment to the original Minab civilian-casualty event.",
+          "confidence": "documented"
+        },
+        {
+          "to": "2026-03-17-un-investigates-minab-strike",
+          "type": "implementation",
+          "label": "Investigation produces findings",
+          "summary": "The March investigation milestone is followed by a September public finding on reasonable grounds.",
+          "confidence": "documented"
+        }
+      ],
+      "search_aliases": ["UN war crimes", "Minab", "Lamerd", "Shajareh Tayyebeh", "fact-finding mission"],
+      "reviewed_at": "2026-10-02",
+      "research_note": "The record uses the mission's reasonable-grounds standard and preserves the U.S. rejection and CENTCOM's dispute over Lamerd. It is not represented as an ICC conviction or final court judgment."
+    },
+    {
+      "id": "2026-09-18-iran-claims-trend-tanker-strike-hormuz",
+      "date_start": "2026-09-18",
+      "title": "Iran claims it struck the Togo-flagged tanker Trend in Hormuz",
+      "summary": "Iran's Revolutionary Guard said it struck the Togo-flagged oil-products tanker Trend after accusing it of an unauthorised Hormuz transit. AP could not independently confirm the strike, while UKMTO separately reported an attack near Khasab with the crew safe.",
+      "context": "The claim signalled that Tehran was still willing to enforce Hormuz transit rules kinetically even as diplomatic messages about reopening continued. The evidence remained asymmetric: Iran identified a vessel and claimed responsibility, while independent maritime reporting confirmed a nearby incident without publicly proving the same ship was involved.",
+      "details": [
+        "AP reported the Iranian state-broadcaster account citing the IRGC and noted that the Guard warned vessels attempting passage without authorisation could face destruction. The AP account also noted a separate UKMTO warning of a tanker hit by an unknown projectile while transiting out of the strait.",
+        "PortNews and IranWire reported that the Trend was a Togo-flagged product tanker and that the Iranian statement did not specify the weapon, precise location, cargo, crew status or damage level. UKMTO's public warning did not name the vessel."
+      ],
+      "theatres": ["Iran", "Strait of Hormuz", "Oman", "Khasab"],
+      "actors": ["Iran", "IRGC Navy", "United Kingdom Maritime Trade Operations", "Trend"],
+      "category": ["maritime", "shipping_attack", "oil_tankers", "official_claim"],
+      "verification": "attribution_disputed",
+      "importance": 4,
+      "theme": "military",
+      "sources": [
+        {
+          "publisher": "Associated Press — Iran claim and UKMTO context",
+          "url": "https://apnews.com/article/024350a0820dfc5dd433b4e13445fab5"
+        },
+        {
+          "publisher": "PortNews — vessel details and UKMTO warning",
+          "url": "https://en.portnews.ru/news/397149/"
+        },
+        {
+          "publisher": "IranWire — IRGC statement summary",
+          "url": "https://iranwire.com/en/news/157769-irgc-strikes-commercial-tanker-trend-near-omani-coast/"
+        },
+        {
+          "publisher": "Tasnim — IRGC Navy claim",
+          "url": "https://www.tasnimnews.ir/en/news/2026/09/18/3699475/togo-flagged-oil-tanker-hit-for-illegal-hormuz-passage-irgc-navy"
+        }
+      ],
+      "relationships": [
+        {
+          "to": "2026-09-06-iran-plans-hormuz-exclusion-zone",
+          "type": "implementation",
+          "label": "Claimed enforcement of Hormuz restrictions",
+          "summary": "Iran's Trend claim illustrates possible kinetic enforcement after it signalled new exclusion or permission rules.",
+          "confidence": "strong_inference"
+        }
+      ],
+      "search_aliases": ["Trend tanker", "Togo flagged tanker", "Khasab", "UKMTO 137-26", "IRGC Navy"],
+      "reviewed_at": "2026-10-02",
+      "research_note": "The Iranian claim and UKMTO incident are recorded together but not forced into a single confirmed attribution. Independent confirmation of the named vessel, damage and weapon was not located."
+    },
+    {
+      "id": "2026-09-18-aramco-halts-october-europe-crude",
+      "date_start": "2026-09-18",
+      "title": "Aramco reportedly tells European refiners they will receive no October crude",
+      "summary": "Reuters, citing Bloomberg, reported that Saudi Aramco had told at least two European refining customers they would receive no crude in October after the East-West pipeline attack. Reuters could not independently verify the report, but also reported earlier cancellations, damaged pumping stations and Orlen seeking replacement crude.",
+      "context": "This was the moment the Saudi pipeline disruption became a European supply shock rather than only a Saudi infrastructure story. It helps explain the later UK and European diesel price surge.",
+      "details": [
+        "Reuters' syndication said European term-contract deliveries would not proceed next month according to Bloomberg's sources, and that Saudi Arabia had earlier informed European customers that some cargoes would be cancelled after drone attacks damaged three pumping stations and disrupted Yanbu loadings.",
+        "The same report said Poland's Orlen was seeking replacement supplies, including North Sea grades. Reuters also noted that Aramco did not immediately respond and that Reuters could not verify Bloomberg's report, so the entry keeps the reporting status explicit."
+      ],
+      "theatres": ["Saudi Arabia", "Europe", "Yanbu", "Strait of Hormuz", "Red Sea"],
+      "actors": ["Saudi Aramco", "European refiners", "Bloomberg", "Reuters", "Orlen"],
+      "category": ["energy", "oil_exports", "pipeline", "economic_pressure"],
+      "verification": "attribution_disputed",
+      "importance": 5,
+      "theme": "energy",
+      "sources": [
+        {
+          "publisher": "Reuters via AOL — Bloomberg report and Reuters caveat",
+          "url": "https://www.aol.com/articles/aramco-halts-october-crude-deliveries-151224000.html"
+        },
+        {
+          "publisher": "Investing.com — Bloomberg report summary and pipeline context",
+          "url": "https://ng.investing.com/news/economy-news/saudi-aramco-halts-crude-oil-supply-to-european-customers-2701212"
+        },
+        {
+          "publisher": "Euronext live feed — Reuters market wrap",
+          "url": "https://live.euronext.com/en/financial-news/oil-pares-losses-market-weighs-saudi-supply-concerns-middle-east-tensions"
+        }
+      ],
+      "relationships": [
+        {
+          "to": "2026-09-12-saudi-east-west-pipeline-attack-origin-iraq",
+          "type": "escalation",
+          "label": "Pipeline damage becomes European supply shock",
+          "summary": "The reported October allocation halt follows the earlier East-West pipeline attack and shutdown.",
+          "confidence": "documented"
+        }
+      ],
+      "search_aliases": ["Aramco no crude Europe", "European refiners", "October crude", "Orlen", "Yanbu disruption"],
+      "reviewed_at": "2026-10-02",
+      "research_note": "The central no-October-crude claim is Bloomberg-sourced and Reuters explicitly could not verify it. The surrounding cancellation, pipeline and replacement-crude context is separately reported."
+    },
+    {
+      "id": "2026-09-22-saudi-east-west-pipeline-partial-restart",
+      "date_start": "2026-09-22",
+      "title": "Saudi Arabia restarts East-West pipeline at low rates, with full recovery weeks away",
+      "summary": "Reuters reported that Saudi Arabia restarted the East-West pipeline and could resume Yanbu exports, but sources said flows were initially low and a full restart could take six to eight weeks.",
+      "context": "The restart eased immediate fears of a total long-term loss of Saudi's Hormuz bypass, but it did not erase the supply shock. Low initial rates, damaged pumping stations and continued Red Sea risk meant diesel and crude markets remained stressed.",
+      "details": [
+        "Reuters reported three sources saying the pipeline had restarted and Yanbu exports could resume that day. Two sources said the line was pumping at a low rate, while another said Aramco wanted to return to 4 million barrels per day against a 7 million barrel-per-day capacity.",
+        "A security source said reaching 40% capacity would take days and full restart six to eight weeks. The same report said three pumping stations had been damaged and noted that oil prices fell after the restart news and Iran's seven-day Hormuz offer."
+      ],
+      "theatres": ["Saudi Arabia", "Yanbu", "Red Sea", "Strait of Hormuz", "Europe", "China"],
+      "actors": ["Saudi Arabia", "Saudi Aramco", "Reuters", "European refiners", "China-bound cargoes"],
+      "category": ["energy", "pipeline", "oil_exports", "market_impact"],
+      "verification": "confirmed",
+      "importance": 4,
+      "theme": "energy",
+      "sources": [
+        {
+          "publisher": "Reuters via MarketScreener — full restart context",
+          "url": "https://www.marketscreener.com/news/saudi-arabia-restarts-east-west-oil-pipeline-to-resume-exports-from-yanbu-sources-say-ce785ad8db81f327"
+        },
+        {
+          "publisher": "Reuters via Investing.com — restart summary",
+          "url": "https://www.investing.com/news/commodities-news/saudi-arabia-restarts-eastwest-oil-pipeline-to-resume-exports-from-yanbu-sources-say-4910267"
+        },
+        {
+          "publisher": "El Pais — Saudi Red Sea exports resume",
+          "url": "https://elpais.com/internacional/2026-09-28/arabia-saudi-vuelve-a-exportar-petroleo-por-el-unico-oleoducto-que-le-permite-esquivar-ormuz.html"
+        }
+      ],
+      "relationships": [
+        {
+          "to": "2026-09-18-aramco-halts-october-europe-crude",
+          "type": "contextual_thread",
+          "label": "Restart does not immediately restore European allocations",
+          "summary": "The partial restart follows reports of cancelled or absent October European crude allocations.",
+          "confidence": "documented"
+        }
+      ],
+      "search_aliases": ["East-West pipeline restart", "Yanbu exports resume", "40 percent capacity", "six to eight weeks"],
+      "reviewed_at": "2026-10-02",
+      "research_note": "The event records a partial restart reported by sources, not confirmed full-capacity restoration. Source estimates differ on timing and rates."
+    },
+    {
+      "id": "2026-09-25-iran-seven-day-hormuz-offer-trump-rejects",
+      "date_start": "2026-09-25",
+      "date_end": "2026-09-26",
+      "precision": "Iranian foreign minister detailed the offer on 25 September; Trump publicly rejected it on 26 September",
+      "title": "Iran offers a seven-day Hormuz reopening plan; Trump rejects it as unacceptable",
+      "summary": "Iran offered to reopen the Strait of Hormuz and resume nuclear talks within seven days if the U.S. lifted its naval blockade, waived oil sanctions and observed a ceasefire including Lebanon. Trump rejected the proposal the next day.",
+      "context": "This was the most concrete diplomatic opening since the failed June framework returned to the debate. Its rejection left the war's energy chokepoint unresolved while pump prices and tanker risks stayed elevated.",
+      "details": [
+        "AP reported that Foreign Minister Abbas Araghchi detailed the proposal outside the U.N. Security Council. The offer linked reopening Hormuz to U.S. steps on the blockade, oil sanctions and a wider ceasefire.",
+        "On 26 September, AP reported Trump rejecting the plan outside the White House. He said Iran wanted a deal because it was losing, but that the proposed deal was not acceptable. Regional reporting from The National and Gulf outlets had already described the offer as part of Pezeshkian's UN General Assembly diplomatic push."
+      ],
+      "theatres": ["United States", "Iran", "United Nations", "Strait of Hormuz", "Lebanon"],
+      "actors": ["Iran", "Abbas Araghchi", "Masoud Pezeshkian", "Donald Trump", "United States", "Qatari mediators"],
+      "category": ["diplomacy", "ceasefire", "maritime", "sanctions", "nuclear"],
+      "verification": "legal_diplomatic",
+      "importance": 5,
+      "theme": "diplomacy",
+      "sources": [
+        {
+          "publisher": "Associated Press via Yahoo — Iran's proposal",
+          "url": "https://currently.att.yahoo.com/att/iran-suggested-deal-reopen-strait-133854959.html"
+        },
+        {
+          "publisher": "Associated Press — Trump rejects proposal",
+          "url": "https://apnews.com/article/c529a0a729600230559354b80c005bad"
+        },
+        {
+          "publisher": "The National — diplomatic push at UNGA",
+          "url": "https://www.thenationalnews.com/news/mena/2026/09/22/iranian-president-heads-to-new-york-for-diplomatic-push-at-un-general-assembly/"
+        },
+        {
+          "publisher": "Khaleej Times — regional report on proposal and rejection",
+          "url": "https://www.khaleejtimes.com/world/mena/iran-reopen-hormuz-7-days-trump-reportedly-rejects-plan?amp=1"
+        }
+      ],
+      "relationships": [
+        {
+          "to": "2026-09-01-pezeshkian-offers-return-to-june-mou",
+          "type": "negotiation",
+          "label": "September proposal revives the June framework problem",
+          "summary": "Both offers attempted to trade Hormuz access and talks for U.S. concessions, but neither produced a confirmed implementation path.",
+          "confidence": "documented"
+        },
+        {
+          "to": "2026-09-22-saudi-east-west-pipeline-partial-restart",
+          "type": "contextual_thread",
+          "label": "Diplomacy intersects with oil-market relief",
+          "summary": "Reuters linked lower oil prices that week to both the Saudi pipeline restart and Iran's conditional Hormuz offer.",
+          "confidence": "documented"
+        }
+      ],
+      "search_aliases": ["seven-day Hormuz plan", "Araghchi proposal", "Trump rejects Iran proposal", "UNGA Hormuz offer"],
+      "reviewed_at": "2026-10-02",
+      "research_note": "The proposal is recorded as an offer with conditions, not a ceasefire or an actual reopening. Rejection date is distinct from offer date."
+    },
+    {
+      "id": "2026-09-30-three-hormuz-tankers-hit-delayed-ukmto",
+      "date_start": "2026-09-29",
+      "date_end": "2026-09-30",
+      "precision": "Incidents occurred on 29 September; UKMTO delayed warnings were published on 30 September",
+      "title": "Three more tankers are reported hit in Hormuz through delayed UKMTO warnings",
+      "summary": "UKMTO issued delayed warnings saying three ships were hit by unknown projectiles in the Strait of Hormuz. Maritime trade outlets reported that the incidents followed another late-reported strike on a Kuwaiti-operated VLCC the previous day.",
+      "context": "The delayed reporting itself matters: it showed that the public picture of Hormuz risk was lagging behind events. The strikes also complicated claims that rising crude flows meant the route had returned to normal commercial safety.",
+      "details": [
+        "CBS, citing a British maritime agency, reported that a crude oil tanker and two other vessels were struck by unknown projectiles on Tuesday. The crew was reported safe in at least the previously reported case, and attribution was not publicly established.",
+        "gCaptain and Seatrade Maritime reported that UKMTO issued warnings 144-26, 145-26 and 146-26 on 30 September for incidents received on 29 September. Seatrade said UKMTO had also published a late report for a 28 September strike and identified the earlier vessel through IMO records as the Kuwaiti-operated VLCC Al Funtas."
+      ],
+      "theatres": ["Strait of Hormuz", "Oman", "Kuwait", "United Arab Emirates", "Saudi Arabia"],
+      "actors": ["United Kingdom Maritime Trade Operations", "commercial tanker operators", "Kuwait Oil Tanker Company", "Iran"],
+      "category": ["maritime", "shipping_attack", "oil_tankers", "energy"],
+      "verification": "attribution_disputed",
+      "importance": 5,
+      "theme": "energy",
+      "sources": [
+        {
+          "publisher": "CBS News — UKMTO three-tanker report",
+          "url": "https://www.cbsnews.com/live-updates/iran-war-us-negotiations-strait-of-hormuz-oil/"
+        },
+        {
+          "publisher": "gCaptain — delayed UKMTO tanker warnings",
+          "url": "https://gcaptain.com/three-more-tanker-attacks-surface-in-delayed-hormuz-reports/"
+        },
+        {
+          "publisher": "Seatrade Maritime — four vessels struck in Hormuz in 24 hours",
+          "url": "https://www.seatrade-maritime.com/security/four-vessels-struck-in-hormuz-in-24-hours"
+        }
+      ],
+      "relationships": [
+        {
+          "to": "2026-09-18-iran-claims-trend-tanker-strike-hormuz",
+          "type": "escalation",
+          "label": "Repeated tanker strikes after the Trend claim",
+          "summary": "The late-September warnings show continued maritime violence after the 18 September Iranian tanker claim.",
+          "confidence": "documented"
+        },
+        {
+          "to": "2026-09-25-iran-seven-day-hormuz-offer-trump-rejects",
+          "type": "contextual_thread",
+          "label": "Violence continues around failed diplomacy",
+          "summary": "The tanker strikes occurred days after the seven-day reopening offer was rejected.",
+          "confidence": "documented"
+        }
+      ],
+      "search_aliases": ["UKMTO 144-26", "UKMTO 145-26", "UKMTO 146-26", "Al Funtas", "Mersin Prosperity", "Sinbad"],
+      "reviewed_at": "2026-10-02",
+      "research_note": "Attribution, exact vessel identities for all three 29 September incidents and damage levels remain incomplete. The event relies on UKMTO and maritime-industry reporting rather than assigning blame."
+    },
+    {
+      "id": "2026-09-30-us-completes-iraq-withdrawal",
+      "date_start": "2026-09-30",
+      "title": "U.S. military completes Iraq withdrawal as Iran-backed militias celebrate",
+      "summary": "The U.S. military announced that all American troops had withdrawn from Iraq, ending the anti-ISIS mission there. The pullout was previously agreed, but it occurred during the Iran war and was celebrated by Iran-backed militia figures.",
+      "context": "This changed the regional military map. The withdrawal removed a long-standing U.S. footprint while Iraqi militia networks linked to Iran were already involved in Gulf and Saudi escalation.",
+      "details": [
+        "AP reported that the withdrawal ended a 12-year mission against ISIS and followed a pullout agreement reached two years earlier. It also noted that Iran-backed militias had attacked U.S. troops during the war and coordinated with Houthis against Saudi Arabia.",
+        "CBS and AP reported mixed reactions: celebration among Iran-backed groups, concern among some Iraqis and Kurds, and Trump portraying the exit as the end of an expensive mission."
+      ],
+      "theatres": ["Iraq", "United States", "Iran", "Kurdistan Region", "Saudi Arabia"],
+      "actors": ["United States", "Iraq", "Donald Trump", "Iran-backed Iraqi militias", "Kataib Hezbollah", "Houthis"],
+      "category": ["military", "withdrawal", "proxy_conflict", "domestic_politics"],
+      "verification": "confirmed",
+      "importance": 4,
+      "theme": "military",
+      "sources": [
+        {
+          "publisher": "Associated Press — U.S. exit from Iraq",
+          "url": "https://apnews.com/article/a097a39f3d1a3515adc2ba3298a6816f"
+        },
+        {
+          "publisher": "CBS News — live Iran-war roundup with Iraq withdrawal",
+          "url": "https://www.cbsnews.com/live-updates/iran-war-us-negotiations-strait-of-hormuz-oil/"
+        },
+        {
+          "publisher": "Boston.com — AP syndicated withdrawal report",
+          "url": "https://www.boston.com/news/world-news/2026/09/30/the-u-s-military-says-its-withdrawal-of-troops-from-iraq-is-complete/"
+        }
+      ],
+      "relationships": [
+        {
+          "to": "2026-09-12-saudi-east-west-pipeline-attack-origin-iraq",
+          "type": "contextual_thread",
+          "label": "Iraqi militia role remains central after U.S. exit",
+          "summary": "The withdrawal came after Iraq-based militias were linked to attacks on Saudi energy infrastructure.",
+          "confidence": "documented"
+        }
+      ],
+      "search_aliases": ["U.S. withdrawal Iraq", "Operation Inherent Resolve Iraq ends", "Kataib Hezbollah celebrates", "September 30 Iraq pullout"],
+      "reviewed_at": "2026-10-02",
+      "research_note": "The withdrawal was long planned, so this entry does not imply it was caused solely by the Iran war. The timing and militia reactions are the conflict-relevant elements."
+    },
+    {
+      "id": "2026-10-01-us-carrier-build-up-trump-renewed-threats",
+      "date_start": "2026-10-01",
+      "title": "U.S. sends more naval forces as Trump threatens renewed Iran strikes after midterms",
+      "summary": "U.S. officials said additional ships carrying more than 7,000 sailors and 2,000 Marines were heading to the Middle East, potentially bringing three carriers into the region by late October. Trump also said Iran was ready to fold and that U.S. attacks could resume after the midterms if talks failed.",
+      "context": "This was a strategic posture signal rather than a single strike. It showed Washington preparing for either coercive diplomacy or renewed escalation after rejecting Iran's Hormuz offer.",
+      "details": [
+        "AP reporting in the 1 October roundup said the USS Theodore Roosevelt carrier strike group and USS Makin Island amphibious readiness group were heading to the region. If joined with vessels already present, the U.S. could have an unusually high naval presence of more than 20,000 sailors and Marines and hundreds of aircraft.",
+        "CBS reported Trump's later remarks that Iran was ready to fold and that the war could be ended after the election, while also noting his TIME interview warning that military action could resume if no satisfactory agreement emerged."
+      ],
+      "theatres": ["United States", "Iran", "Persian Gulf", "Strait of Hormuz", "Middle East"],
+      "actors": ["United States", "Donald Trump", "U.S. Navy", "USS Theodore Roosevelt", "USS Makin Island", "Iran"],
+      "category": ["military", "naval", "official_claim", "escalation", "diplomacy"],
+      "verification": "official_claim",
+      "importance": 5,
+      "theme": "signals",
+      "sources": [
+        {
+          "publisher": "Associated Press — 1 October roundup",
+          "url": "https://apnews.com/article/af2443646cf96ff01b8b1becff3f3e0e"
+        },
+        {
+          "publisher": "CBS News — live roundup and Trump remarks",
+          "url": "https://www.cbsnews.com/live-updates/iran-war-us-negotiations-strait-of-hormuz-oil/"
+        },
+        {
+          "publisher": "Al Jazeera — live update on U.S. deployments",
+          "url": "https://www.aljazeera.com/amp/news/liveblog/2026/10/2/iran-war-live-us-moves-2000-marines-to-middle-east-tanker-hit-in-hormuz"
+        }
+      ],
+      "relationships": [
+        {
+          "to": "2026-09-25-iran-seven-day-hormuz-offer-trump-rejects",
+          "type": "escalation",
+          "label": "Military pressure follows rejected diplomacy",
+          "summary": "The additional U.S. naval posture followed the rejection of Iran's conditional reopening plan.",
+          "confidence": "strong_inference"
+        }
+      ],
+      "search_aliases": ["three carriers", "Makin Island", "Theodore Roosevelt", "post-midterm strikes", "ready to fold"],
+      "reviewed_at": "2026-10-02",
+      "research_note": "The deployment details rely on anonymous U.S. officials speaking to AP/Al Jazeera; the strike timing is Trump's public political signal, not a formal operation order."
+    },
+    {
+      "id": "2026-10-02-uk-diesel-tops-two-pounds",
+      "date_start": "2026-10-02",
+      "title": "UK diesel tops £2 a litre after setting new all-time highs",
+      "summary": "RAC said UK diesel averaged 200.01p per litre, crossing £2 for the first time after already breaking the previous record on 28 September. The RAC linked the pressure to the continuing Middle East conflict, Hormuz disruption and possible U.S. diesel-export restrictions.",
+      "context": "This is the clearest consumer-facing marker of the energy crisis in Britain. It connects battlefield and maritime events to everyday inflation through transport and logistics costs.",
+      "details": [
+        "On 28 September, RAC said diesel had reached the highest level in UK history at 199.18p per litre, above the 199.09p record from June 2022. ITV and MoneyWeek reported the same RAC figure and warned about pass-through into goods and services moved by diesel vehicles.",
+        "On 2 October, RAC said diesel had risen to 200.01p per litre, making a 55-litre family-car fill-up about £110 and nearly £32 more than at the start of the U.S.-Iran war. RAC also cited the lack of a deal to reopen Hormuz and possible U.S. diesel-export restrictions as further risks."
+      ],
+      "theatres": ["United Kingdom", "Strait of Hormuz", "Saudi Arabia", "Europe"],
+      "actors": ["RAC", "RAC Foundation", "UK motorists", "UK logistics sector", "United States", "Iran"],
+      "category": ["energy", "diesel", "inflation", "economic_pressure", "oil_prices"],
+      "verification": "confirmed",
+      "importance": 5,
+      "theme": "energy",
+      "sources": [
+        {
+          "publisher": "RAC — diesel tops £2",
+          "url": "https://media.rac.co.uk/diesel-tops-2-a-litre-for-first-time-ever"
+        },
+        {
+          "publisher": "RAC — record high on 28 September",
+          "url": "https://media.rac.co.uk/price-of-diesel-reaches-record-high"
+        },
+        {
+          "publisher": "RAC Foundation — Fuel Finder data",
+          "url": "https://www.racfoundation.org/media-centre/diesel-pushes-through-2-a-litre-mark"
+        },
+        {
+          "publisher": "ITV News — RAC record-high report",
+          "url": "https://www.itv.com/news/2026-09-28/uk-diesel-prices-hit-all-time-high-rac-figures-show"
+        },
+        {
+          "publisher": "MoneyWeek — consumer cost analysis",
+          "url": "https://moneyweek.com/personal-finance/will-petrol-prices-rise"
+        }
+      ],
+      "relationships": [
+        {
+          "to": "2026-09-18-aramco-halts-october-europe-crude",
+          "type": "contextual_thread",
+          "label": "European crude disruption feeds diesel shock",
+          "summary": "The reported Saudi allocation halt and broader supply disruption help explain the UK diesel spike.",
+          "confidence": "documented"
+        },
+        {
+          "to": "2026-09-25-iran-seven-day-hormuz-offer-trump-rejects",
+          "type": "contextual_thread",
+          "label": "Failed Hormuz diplomacy keeps fuel risk elevated",
+          "summary": "RAC explicitly linked the continuing lack of a Hormuz reopening deal to pump-price pressure.",
+          "confidence": "documented"
+        }
+      ],
+      "search_aliases": ["UK diesel £2", "RAC diesel 200.01p", "diesel all-time high", "Fuel Finder", "pump prices"],
+      "reviewed_at": "2026-10-02",
+      "research_note": "The event uses RAC and RAC Foundation data as the primary price record and supporting news outlets for context. It records UK pump prices, not wholesale diesel prices globally."
     }
   ]
 }
