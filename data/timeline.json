@@ -4,7 +4,7 @@
   "description": "Detailed coverage from 2026-02-28 onward, with major precursor events from 2020 onward and expanded Israel/Palestine/Lebanon/Yemen context.",
   "granularity": "Major independently verifiable escalation, retaliation, diplomatic, legal, maritime, leadership, ceasefire and deadline events; not missile-by-missile.",
   "timezone": "Europe/London",
-  "updated_at": "2026-10-02",
+  "updated_at": "2026-11-03",
   "calendar_end": "2028-12-31",
   "initial_event_id": "2026-02-28-us-israel-war-begins",
   "methodology_notes": [
@@ -10840,6 +10840,470 @@
       "search_aliases": ["UK diesel £2", "RAC diesel 200.01p", "diesel all-time high", "Fuel Finder", "pump prices"],
       "reviewed_at": "2026-10-02",
       "research_note": "The event uses RAC and RAC Foundation data as the primary price record and supporting news outlets for context. It records UK pump prices, not wholesale diesel prices globally."
+    },
+    {
+      "id": "2026-10-05-yemeni-forces-retake-bab-el-mandeb-coast",
+      "date_start": "2026-10-05",
+      "title": "Saudi-backed Yemeni forces retake key ground around Bab el-Mandeb",
+      "summary": "Yemeni government and military sources said Saudi-backed forces made a rapid advance around the Bab el-Mandeb Strait, retaking key positions in Dhubab and pushing Houthi forces back from much of the coastal ground they had seized the previous month. Reuters and AP both reported that fighting in the area was continuing.",
+      "context": "Bab el-Mandeb is the southern gateway between the Red Sea and Gulf of Aden. Its disruption had compounded the Strait of Hormuz crisis because it is an alternative route for Saudi oil and other trade; a government claim of effective control did not mean that the local front was settled.",
+      "details": [
+        "Reuters reported that Yemeni government forces, supported by Saudi-led coalition air power, took positions including an airstrip in Dhubab district and advanced along the coast toward Mocha. Government sources described the operation as reversing Houthi gains made in September, while another source said fighting continued near the strait.",
+        "AP likewise reported the recapture of Dhubab, Bab and Hadeid, alongside Houthi claims of missile and drone attacks on Saudi airports, an oil refinery and military sites. Those Houthi operational claims were not independently verified in the report."
+      ],
+      "theatres": ["Yemen", "Bab el-Mandeb", "Red Sea", "Saudi Arabia"],
+      "actors": ["Yemen's internationally recognised government", "Saudi-led coalition", "Houthis", "Saudi Arabia"],
+      "category": ["military", "Yemen", "shipping", "Bab el-Mandeb", "escalation"],
+      "verification": "confirmed",
+      "importance": 4,
+      "theme": "military",
+      "sources": [
+        {
+          "publisher": "Reuters via ThePrint",
+          "title": "Yemeni government forces drive Houthis from Bab el-Mandeb Strait",
+          "url": "https://theprint.in/world/yemeni-government-forces-drive-houthis-from-bab-el-mandeb-strait/3062685/"
+        },
+        {
+          "publisher": "Associated Press",
+          "title": "Saudi-backed Yemeni forces expel Houthi rebels from several areas around key strait",
+          "url": "https://apnews.com/article/e87beb84a0d146e4f0546b50508f7e32"
+        }
+      ],
+      "media": [
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/watch?v=XTK1ccVYsZ4",
+          "caption": "Reuters video report on the Saudi-backed advance toward the strategic Red Sea waterway.",
+          "credit": "Reuters"
+        }
+      ],
+      "relationships": [
+        {
+          "to": "2026-09-10-houthis-take-mokha-bab-el-mandeb",
+          "type": "escalation",
+          "label": "Counteroffensive after Houthi coastal gains",
+          "summary": "Government and Reuters accounts presented the October advance as an effort to reverse the Houthi coastal gains recorded in September.",
+          "confidence": "documented"
+        }
+      ],
+      "search_aliases": ["Dhubab", "Mocha", "Bab el-Mandeb counteroffensive", "Yemen coastal advance", "Saudi-backed forces"],
+      "reviewed_at": "2026-11-03",
+      "research_note": "The existence of the advance and recaptured positions was reported by Reuters and AP. The government's broader claim of effective control over the strait remained qualified by continuing fighting."
+    },
+    {
+      "id": "2026-10-08-hormuz-transits-two-month-low",
+      "date_start": "2026-10-08",
+      "title": "Hormuz transits fall to a two-month low after the deadliest week of tanker attacks",
+      "summary": "Reuters, citing Kpler shipping data, reported that only seven commodity vessels passed through the Strait of Hormuz on 6 October, the lowest total since 23 July, after tanker attacks reached their highest weekly level of the war. Kpler estimated crude crossing had fallen 27% from the preceding wartime high.",
+      "context": "The data show a severe fall in passage through the strait, not a complete halt in Middle East exports. Higher exports from Gulf of Oman and Red Sea terminals partly offset the disruption, while shipowners still faced sharply elevated security and insurance risk.",
+      "details": [
+        "Kpler said crude flows through the strait had fallen to at least 10.1 million barrels a day, about 74% of their pre-war level. Reuters reported that ten vessels transited on 7 October, still markedly below the more than 20 vessels recorded on the preceding Sunday and Monday.",
+        "The same reporting said exports from the Gulf of Oman coast and Red Sea rose to 6.7 million barrels a day, more than twice their pre-war level. That substitution kept aggregate Middle East crude exports near pre-war levels but did not remove the risk to individual ships or cargoes."
+      ],
+      "theatres": ["Strait of Hormuz", "Persian Gulf", "Gulf of Oman", "Red Sea"],
+      "actors": ["Kpler", "commercial shipping", "Gulf oil exporters", "Iran", "United States"],
+      "category": ["shipping", "energy", "oil_exports", "maritime_security", "economic_pressure"],
+      "verification": "confirmed",
+      "importance": 4,
+      "theme": "energy",
+      "sources": [
+        {
+          "publisher": "Reuters via Investing.com",
+          "title": "Hormuz transits at lowest in over two months after attacks, data shows",
+          "url": "https://www.investing.com/news/commodities-news/hormuz-transits-at-lowest-in-over-two-months-after-attacks-data-shows-4937851"
+        },
+        {
+          "publisher": "Reuters via Internazionale",
+          "title": "Attacks on tankers in Hormuz hit highest of any week since start of Iran war, sources say",
+          "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/10/07/attacks-on-tankers-hormuz-hit-highest-of-any-week-since-start-of-iran-war-sources-say"
+        }
+      ],
+      "media": [
+        {
+          "type": "image",
+          "url": "https://content-media.investing.com/trkd-images/LYNXMPEM9706S_L.jpg",
+          "caption": "Vessels near Bandar Abbas on 6 October, used by Reuters to illustrate reporting on the fall in Strait of Hormuz transits.",
+          "credit": "Amirhosein Khorgooi/ISNA/WANA via Reuters",
+          "source_url": "https://www.investing.com/news/commodities-news/hormuz-transits-at-lowest-in-over-two-months-after-attacks-data-shows-4937851"
+        }
+      ],
+      "relationships": [
+        {
+          "to": "2026-09-30-three-hormuz-tankers-hit-delayed-ukmto",
+          "type": "escalation",
+          "label": "Maritime attacks suppress traffic",
+          "summary": "Reuters linked the reduced transit data to the sharp increase in attacks on commercial vessels during the preceding week.",
+          "confidence": "documented"
+        }
+      ],
+      "search_aliases": ["Kpler Hormuz transits", "seven commodity vessels", "October tanker attacks", "crude crossing 10.1 million bpd"],
+      "reviewed_at": "2026-11-03",
+      "research_note": "The vessel and flow figures are Kpler estimates reported by Reuters; they are snapshots of traffic and should not be read as a measure of every form of shipping or of a total regional export shutdown."
+    },
+    {
+      "id": "2026-10-10-riyadh-airport-houthi-strike",
+      "date_start": "2026-10-10",
+      "title": "Houthi strike on Riyadh airport kills at least 12 and wounds more than 300",
+      "summary": "Saudi authorities said a strike on King Khalid International Airport in Riyadh killed at least 12 people and wounded more than 300. Reuters described it as the deadliest attack in Saudi Arabia in more than a decade; a later Reuters follow-up reported a toll of 13 dead.",
+      "context": "The attack brought the Yemen front directly into Saudi civilian aviation infrastructure, showing that the wider conflict was no longer confined to maritime chokepoints and military sites.",
+      "details": [
+        "Saudi authorities attributed the strike to the Houthis. Reuters reported the 12-dead, more-than-300-injured initial toll and said the attack followed a wider Houthi campaign against Saudi airports and energy infrastructure. A Reuters report the next day gave a death toll of 13; this entry preserves the initial official figure and records the later discrepancy.",
+        "AP reported that a missile hit a passenger terminal and that President Trump was evaluating whether the United States should join Saudi strikes against the Houthis. The report described this as another strike on the airport rather than a stand-alone incident."
+      ],
+      "theatres": ["Saudi Arabia", "Riyadh", "Yemen"],
+      "actors": ["Houthis", "Saudi Arabia", "King Khalid International Airport", "United States"],
+      "category": ["missile_attack", "civilian_harm", "aviation", "Yemen", "Saudi Arabia"],
+      "verification": "confirmed",
+      "importance": 5,
+      "theme": "military",
+      "sources": [
+        {
+          "publisher": "Reuters via MarketScreener",
+          "title": "Houthi strike on Saudi airport kills 12, worst attack on kingdom in a decade",
+          "url": "https://www.marketscreener.com/news/latest/Houthi-strike-on-Saudi-airport-kills-12-worst-attack-on-kingdom-in-a-decade-12495069/"
+        },
+        {
+          "publisher": "Reuters via Investing.com",
+          "title": "One dead in new attack on Saudi airport, a day after Houthi strike kills 13",
+          "url": "https://www.investing.com/news/commodities-news/yemens-houthis-renew-warning-over-saudi-airports-after-deadly-riyadh-attack-4942575"
+        },
+        {
+          "publisher": "Associated Press",
+          "title": "Airport in the Saudi capital is attacked again, and other Mideast developments",
+          "url": "https://apnews.com/article/a5f40b5e0ab08ae8128db5ed749114d8"
+        }
+      ],
+      "media": [
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/watch?v=obr5w5D0foY",
+          "caption": "Reuters report on the October Houthi attacks on Saudi cities.",
+          "credit": "Reuters"
+        }
+      ],
+      "claims": [
+        {
+          "claim": "Saudi authorities attributed the airport attack to Houthi forces, whose spokesman had claimed attacks on Saudi targets.",
+          "status": "Reported by Reuters and AP; casualty totals changed in follow-up reporting."
+        }
+      ],
+      "search_aliases": ["King Khalid airport attack", "Riyadh airport October 10", "Houthi Saudi airport strike", "Riyadh airport casualties"],
+      "reviewed_at": "2026-11-03",
+      "research_note": "The reported death toll differs between contemporaneous reports (initially 12, later 13). The event does not claim a final independently audited casualty total."
+    },
+    {
+      "id": "2026-10-13-aramco-hq-fire-after-attack",
+      "date_start": "2026-10-13",
+      "title": "Attack causes limited fire at Saudi Aramco headquarters in Dhahran",
+      "summary": "Saudi Arabia's Energy Ministry said an attack on an administrative building at Saudi Aramco's headquarters in Dhahran caused a limited fire but no injuries. Reuters reported that the building was evacuated and that it was initially unclear whether it was hit directly or damaged by falling debris.",
+      "context": "The incident was a symbolic attack on the headquarters of the world's largest oil company, but the contemporaneous official accounts did not report disruption to Aramco production or export capacity.",
+      "details": [
+        "Reuters reported loud booms near the complex and cited a Saudi Energy Ministry statement that described the fire as limited. Sources with knowledge of the matter told Reuters that the building was on fire, while the immediate mechanism of damage was not clear.",
+        "The Houthis later said they had struck the headquarters. AP's wider report placed the incident amid repeated attacks and interception alerts over Saudi Arabia, but the Saudi statement did not publicly establish the precise weapon or causal chain."
+      ],
+      "theatres": ["Saudi Arabia", "Dhahran", "Yemen", "Persian Gulf"],
+      "actors": ["Saudi Aramco", "Saudi Arabia", "Houthis", "Saudi Energy Ministry"],
+      "category": ["energy_infrastructure", "missile_attack", "Yemen", "Saudi Arabia", "oil"],
+      "verification": "attribution_disputed",
+      "importance": 4,
+      "theme": "energy",
+      "sources": [
+        {
+          "publisher": "Reuters via MarketScreener",
+          "title": "Saudi Aramco headquarters attacked, limited fire reported",
+          "url": "https://uk.marketscreener.com/news/saudi-led-coalition-to-warn-civilians-to-evacuate-site-in-yemen-sanaa-ahead-of-operation-ce785dddde8af223/"
+        },
+        {
+          "publisher": "Associated Press",
+          "title": "Saudi Ministry of Energy reports limited fire in building at Aramco compound targeted in attack",
+          "url": "https://apnews.com/article/307d49abfe63ff66c99c318d94ca3e15"
+        }
+      ],
+      "media": [
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/watch?v=LWFtTnT8dDY",
+          "caption": "Bloomberg Television report on the Aramco headquarters incident and the initial official response.",
+          "credit": "Bloomberg Television"
+        }
+      ],
+      "relationships": [
+        {
+          "to": "2026-10-10-riyadh-airport-houthi-strike",
+          "type": "escalation",
+          "label": "Attack campaign expands to energy headquarters",
+          "summary": "Reuters and AP treated the Aramco incident as part of the same widening pattern of attacks from Yemen on Saudi airports and energy infrastructure.",
+          "confidence": "documented"
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The Houthis said they struck the Aramco headquarters directly.",
+          "status": "A Houthi claim; the Saudi Energy Ministry confirmed a limited fire but did not publicly establish the mechanism of damage."
+        }
+      ],
+      "search_aliases": ["Aramco HQ fire", "Dhahran headquarters attack", "Saudi Energy Ministry limited fire", "Houthi Aramco October 13"],
+      "reviewed_at": "2026-11-03",
+      "research_note": "No contemporaneous source reviewed established a production outage, direct-hit mechanism or independently verified perpetrator."
+    },
+    {
+      "id": "2026-10-14-two-ships-sink-near-hormuz",
+      "date_start": "2026-10-14",
+      "title": "Two commercial ships sink near Hormuz after separate projectile incidents",
+      "summary": "Reuters reported that the container ship GFS Pride and the dry-bulk carrier Cape Dao sank near the Strait of Hormuz after separate projectile incidents. The report described them as the second and third vessels to sink since the war began; attribution for the attacks was not established.",
+      "context": "The incidents broadened the visible risk beyond oil tankers to container and bulk shipping. They also demonstrated why a count of crude export flows alone could understate the disruption to maritime commerce and crews.",
+      "details": [
+        "Reuters cited maritime officials and International Maritime Organization casualty data. It said GFS Pride and Cape Dao sank after separate attacks over roughly 24 hours and that cargo and container vessels, not only tankers, had been hit or immobilised during the October escalation.",
+        "AP reported that Singaporean shipping authorities said two Singapore-registered cargo vessels had been hit by unknown projectiles; one sank and the crew were evacuated, while the other reached safety. Iran separately said a cargo ship had hit a mine. The available reporting did not establish that the Iranian account and each reported vessel incident were the same event."
+      ],
+      "theatres": ["Strait of Hormuz", "Gulf of Oman", "Oman", "Iran"],
+      "actors": ["commercial shipping", "International Maritime Organization", "Singapore Maritime and Port Authority", "Iran"],
+      "category": ["shipping", "maritime_security", "commercial_vessels", "energy", "civilian_risk"],
+      "verification": "attribution_disputed",
+      "importance": 5,
+      "theme": "energy",
+      "sources": [
+        {
+          "publisher": "Reuters via Investing.com",
+          "title": "Two ships sink near Hormuz after being hit by projectiles amid surge in attacks",
+          "url": "https://www.investing.com/news/commodities-news/two-ships-sink-near-hormuz-after-being-hit-by-projectiles-4950603"
+        },
+        {
+          "publisher": "Associated Press",
+          "title": "Iran says a ship sank after striking a mine in Strait of Hormuz, and other Middle East developments",
+          "url": "https://apnews.com/article/7e2c57a29fd5c3afc7ffe0cf63954bf3"
+        }
+      ],
+      "media": [
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/watch?v=o1SYAvmnDQ8",
+          "caption": "Reuters footage of debris in waters near Hormuz after vessels sank.",
+          "credit": "Reuters"
+        }
+      ],
+      "relationships": [
+        {
+          "to": "2026-10-08-hormuz-transits-two-month-low",
+          "type": "escalation",
+          "label": "Shipping risk expands beyond tankers",
+          "summary": "The sinkings followed the documented early-October surge in attacks and reinforced the reduction in commercial appetite to transit the waterway.",
+          "confidence": "documented"
+        }
+      ],
+      "claims": [
+        {
+          "claim": "Iran said a cargo ship had struck a naval mine in the strait.",
+          "status": "Official Iranian account; AP said it was unclear whether that ship was the same vessel identified in other reports."
+        }
+      ],
+      "search_aliases": ["GFS Pride", "Cape Dao", "two ships sink Hormuz", "Singapore cargo vessels", "projectile attacks October 14"],
+      "reviewed_at": "2026-11-03",
+      "research_note": "The sinkings were reported by multiple maritime sources, but the perpetrator and the mapping between individual ship reports and Iran's mine claim remained unresolved."
+    },
+    {
+      "id": "2026-10-26-regional-delegations-tehran-talks",
+      "date_start": "2026-10-26",
+      "title": "Saudi, Pakistani and Turkish delegations meet Iran's security leadership in Tehran",
+      "summary": "Saudi Defence Minister Khalid bin Salman, Pakistan's army chief Asim Munir and Turkish intelligence chief Ibrahim Kalin attended talks in Tehran hosted by Iranian security chief Mohsen Rezaei. A statement said the four countries would continue discussions on regional peace and security, without announcing a settlement.",
+      "context": "The meeting brought together states with differing positions in the conflict while Qatar-led mediation was also under way. It was a regional de-escalation effort, not direct U.S.-Iran negotiations or a new ceasefire agreement.",
+      "details": [
+        "AP reported that the delegations met Rezaei, secretary of Iran's Supreme National Security Council, and that a joint statement committed the four states to continued talks. The report did not describe agreed terms for reopening Hormuz or ending the war.",
+        "The diplomatic engagement took place as the Yemen front widened and concern grew that U.S.-Iran fighting could resume after the U.S. midterm elections. It should therefore be read as a confidence-building and coordination attempt, not proof of a negotiated breakthrough."
+      ],
+      "theatres": ["Iran", "Saudi Arabia", "Pakistan", "Turkey", "Strait of Hormuz"],
+      "actors": ["Mohsen Rezaei", "Khalid bin Salman", "Asim Munir", "Ibrahim Kalin", "Iran", "Saudi Arabia", "Pakistan", "Turkey"],
+      "category": ["diplomacy", "regional_security", "negotiations", "Hormuz"],
+      "verification": "legal_diplomatic",
+      "importance": 4,
+      "theme": "diplomacy",
+      "sources": [
+        {
+          "publisher": "Associated Press",
+          "title": "High-level delegations meeting in Tehran to avert more war",
+          "url": "https://apnews.com/article/36486edb61b3bf4e0df67e8a17123e44"
+        }
+      ],
+      "media": [
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/watch?v=3G04KooY2J0",
+          "caption": "BBC News report on Iran's president holding talks with Saudi Arabia, Pakistan and Turkey.",
+          "credit": "BBC News"
+        }
+      ],
+      "search_aliases": ["Tehran regional talks", "Khalid bin Salman Iran", "Asim Munir Tehran", "Ibrahim Kalin Tehran", "Mohsen Rezaei October 26"],
+      "reviewed_at": "2026-11-03",
+      "research_note": "The public statement confirmed continued dialogue but did not disclose negotiating terms, a timetable or an agreement on Hormuz."
+    },
+    {
+      "id": "2026-10-29-taiz-siege-humanitarian-crisis",
+      "date_start": "2026-10-29",
+      "title": "Taiz officials warn of famine conditions as siege and airstrikes intensify",
+      "summary": "Taiz governor Nabil Shamsan said the Houthi siege had pushed the city into famine conditions, while a Houthi-run health ministry said a Saudi airstrike in western Taiz killed at least 13 people. Human Rights Watch said the siege could amount to the war crime of starvation as a method of warfare; Houthi leader Abdul Malik al-Houthi denied that a siege existed.",
+      "context": "The development marked the human cost of the renewed Yemen front. The competing accounts make clear why the city's humanitarian condition and individual casualty claims should not be treated as a settled military narrative.",
+      "details": [
+        "AP reported Shamsan's description of a city receiving only a fraction of the water it needed, with cooking gas blocked and hospitals running short of oxygen. It also reported that the World Food Program could not reach more than 600,000 aid-dependent people in Taiz.",
+        "The claimed death toll in the Saudi airstrike came from the Houthi-run Health Ministry; the Saudi-led coalition had not commented when AP published. Human Rights Watch described the blockade as potentially amounting to starvation as a method of warfare, while the Houthi leader said reports of a siege were fabricated."
+      ],
+      "theatres": ["Yemen", "Taiz"],
+      "actors": ["Houthis", "Saudi-led coalition", "Taiz governorate", "World Food Program", "Human Rights Watch"],
+      "category": ["humanitarian", "civilian_harm", "siege", "Yemen", "food_security"],
+      "verification": "attribution_disputed",
+      "importance": 4,
+      "theme": "context",
+      "sources": [
+        {
+          "publisher": "Associated Press",
+          "title": "Yemen's besieged Taiz is in famine, governor says, as 13 are killed by Saudi airstrike",
+          "url": "https://apnews.com/article/172666b6c90fc3f0ed8a161f2457be2c"
+        },
+        {
+          "publisher": "Associated Press",
+          "title": "Iran says 3 oil tankers struck mines, and other Mideast news",
+          "url": "https://apnews.com/article/c11dac838a072af25ba8d0eb81d01035"
+        }
+      ],
+      "media": [
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/watch?v=RswQoizIQRQ",
+          "caption": "Reuters video report on the importance of the siege of Taiz in Yemen's renewed war.",
+          "credit": "Reuters"
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The Houthi-run Health Ministry said a Saudi airstrike killed at least 13 people, mostly women and children.",
+          "status": "Unverified claim in the contemporaneous AP report; the coalition had not commented."
+        },
+        {
+          "claim": "Taiz was under siege and in famine conditions.",
+          "status": "Supported by local-government and humanitarian accounts; denied by Houthi leader Abdul Malik al-Houthi."
+        }
+      ],
+      "search_aliases": ["Taiz famine", "Taiz siege", "Yemen humanitarian crisis October 2026", "Human Rights Watch Taiz starvation"],
+      "reviewed_at": "2026-11-03",
+      "research_note": "This record distinguishes the reported humanitarian situation from contested responsibility for individual civilian deaths."
+    },
+    {
+      "id": "2026-10-30-hormuz-tanker-attack-and-mine-claims",
+      "date_start": "2026-10-30",
+      "title": "Confirmed tanker attack and disputed mine claims deepen Hormuz shipping risk",
+      "summary": "UK Maritime Trade Operations reported that a vessel south of Iran's Lavan Island was hit by an unknown projectile and caught fire. Separately, Reuters cited maritime sources saying limpet mines were attached to the tanker Louise 1, causing an engine-room fire; Iran claimed that three, then four, oil tankers had struck mines, claims the Associated Press could not independently verify.",
+      "context": "The reports describe different incidents and different levels of verification. They document severe shipping insecurity but do not establish that every reported tanker fire was caused by the same actor, weapon or route dispute.",
+      "details": [
+        "Reuters reported that a small boat attached two limpet mines to the hull of Louise 1, temporarily disabling it. The report described this as the first successful use of such explosives in the waterway since the war began, based on maritime-security sources; it did not publicly establish responsibility.",
+        "AP reported that Iran's Revolutionary Guard said four oil tankers, including one carrying more than two million barrels of oil, had hit mines while using routes Iran described as unauthorised. AP also recorded the UKMTO report of a separate vessel struck by an unknown projectile south of Lavan Island and an Omani evacuation of 25 crew from a tanker on fire."
+      ],
+      "theatres": ["Strait of Hormuz", "Lavan Island", "Oman", "Iran"],
+      "actors": ["UK Maritime Trade Operations", "Iranian Revolutionary Guard Corps", "Louise 1", "commercial shipping", "Oman"],
+      "category": ["shipping", "tanker_attack", "mines", "maritime_security", "energy"],
+      "verification": "attribution_disputed",
+      "importance": 4,
+      "theme": "energy",
+      "sources": [
+        {
+          "publisher": "Reuters via MarketScreener",
+          "title": "Tanker in Strait of Hormuz hit by limpet mines, security sources say",
+          "url": "https://www.marketscreener.com/news/tanker-in-strait-of-hormuz-hit-by-limpet-mines-security-sources-say-ce785fdbda8ef420/"
+        },
+        {
+          "publisher": "Associated Press",
+          "title": "Iran says 4 tankers strike mines and catch fire in Strait of Hormuz, and other Mideast news",
+          "url": "https://apnews.com/article/7f7f34ceb62f294a450e48ace0bd56e0"
+        },
+        {
+          "publisher": "UK Maritime Trade Operations",
+          "title": "Maritime security notices",
+          "url": "https://www.ukmto.org/"
+        }
+      ],
+      "media": [
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/watch?v=9vWgaAIdepk",
+          "caption": "DW News report on the Iranian mine claims; the claims remain separately attributed in this record.",
+          "credit": "DW News"
+        }
+      ],
+      "relationships": [
+        {
+          "to": "2026-10-14-two-ships-sink-near-hormuz",
+          "type": "contextual_thread",
+          "label": "Continuing commercial-shipping danger",
+          "summary": "Both events document the continuing exposure of commercial vessels to attacks and hazards in and around Hormuz during October.",
+          "confidence": "documented"
+        }
+      ],
+      "claims": [
+        {
+          "claim": "Iran said four oil tankers had struck mines and caught fire after using unauthorised routes.",
+          "status": "Official Iranian claim; AP said it could not independently verify the reports."
+        },
+        {
+          "claim": "A vessel south of Lavan Island was struck by an unknown projectile and caught fire.",
+          "status": "UKMTO incident report; no public attribution to a party or weapon system."
+        }
+      ],
+      "search_aliases": ["Louise 1", "Lavan Island projectile", "Hormuz limpet mines", "four tankers mines", "UKMTO October 30"],
+      "reviewed_at": "2026-11-03",
+      "research_note": "Multiple vessel incidents were reported in a short period. This entry intentionally keeps the verified UKMTO report, source-based limpet-mine report and Iranian tanker claims distinct."
+    },
+    {
+      "id": "2026-11-02-us-defensive-strikes-qeshm",
+      "date_start": "2026-11-02",
+      "title": "U.S. conducts limited defensive strikes on Qeshm as Qatar mediation continues",
+      "summary": "A U.S. official said American forces carried out limited defensive strikes on Iranian targets in the Strait of Hormuz, targeting personnel using surface-to-air missiles against U.S. assets. Iranian state media reported explosions on Qeshm Island; U.S. officials said the action did not signal a return to full-scale operations.",
+      "context": "The strikes were a significant direct U.S.-Iran military incident after weeks of pressure and diplomacy. They occurred while Qatar was still mediating indirect talks, which had produced altered proposals but no breakthrough by the next day.",
+      "details": [
+        "AP reported that the strikes took place on Monday, 2 November, before the U.S. midterm elections. A U.S. official speaking anonymously described them as defensive measures against Iranian surface-to-air missile activity; Iranian state television reported explosions on Qeshm Island. CENTCOM had not issued a contemporaneous public announcement in the reporting reviewed.",
+        "Reuters reported on 3 November that Qatari mediators were trying to narrow remaining gaps between Tehran and Washington. Iranian officials said Hormuz would not reopen unless the United States addressed Iran's conditions, while Qatar said both sides were reviewing mediator proposals."
+      ],
+      "theatres": ["Iran", "Qeshm Island", "Strait of Hormuz", "Qatar", "United States"],
+      "actors": ["United States", "Iran", "U.S. military", "Qatari mediators", "Donald Trump", "Mohsen Rezaei"],
+      "category": ["military", "air_strikes", "Hormuz", "diplomacy", "escalation"],
+      "verification": "confirmed",
+      "importance": 5,
+      "theme": "military",
+      "sources": [
+        {
+          "publisher": "Associated Press",
+          "title": "US has conducted defensive strikes on Iranian targets in the Strait of Hormuz, US official says",
+          "url": "https://apnews.com/article/b4519ef86bafe2672e0855d7a48ce309"
+        },
+        {
+          "publisher": "Associated Press",
+          "title": "US strikes in the Strait of Hormuz create more questions about what's ahead",
+          "url": "https://apnews.com/article/183b3d32d9bf5241f744abb917e6713e"
+        },
+        {
+          "publisher": "Reuters via Al-Monitor",
+          "title": "Iran, US still far apart on deal to end war as Qatar pushes mediation",
+          "url": "https://www.al-monitor.com/originals/2026/11/iran-us-still-far-apart-deal-end-war-qatar-pushes-mediation"
+        }
+      ],
+      "media": [
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/watch?v=LM5cN7R3yVs",
+          "caption": "Al Jazeera English report on explosions reported on Qeshm Island amid fears of renewed war.",
+          "credit": "Al Jazeera English"
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The U.S. action was a limited defensive strike targeting Iranian surface-to-air missile activity against U.S. assets.",
+          "status": "Account from an anonymous U.S. official, reported independently by AP and Reuters; no contemporaneous CENTCOM release was located."
+        },
+        {
+          "claim": "Iran's conditions must be met before Hormuz reopens.",
+          "status": "Position stated by Iranian officials during Qatar-mediated talks, not an agreed settlement term."
+        }
+      ],
+      "search_aliases": ["Qeshm defensive strikes", "US strikes Qeshm Island", "November 2 Hormuz strikes", "Qatar mediation Iran US", "surface-to-air missiles Qeshm"],
+      "reviewed_at": "2026-11-03",
+      "research_note": "The strike account relies on officials speaking anonymously and Iranian reports of explosions, but was corroborated by AP and Reuters. No casualty or damage figure is recorded because none was independently established in the sources reviewed."
     }
   ]
 }
