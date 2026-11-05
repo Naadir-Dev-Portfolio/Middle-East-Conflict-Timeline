@@ -4,7 +4,7 @@
   "description": "Detailed coverage from 2026-02-28 onward, with major precursor events from 2020 onward and expanded Israel/Palestine/Lebanon/Yemen context.",
   "granularity": "Major independently verifiable escalation, retaliation, diplomatic, legal, maritime, leadership, ceasefire and deadline events; not missile-by-missile.",
   "timezone": "Europe/London",
-  "updated_at": "2026-11-03",
+  "updated_at": "2026-11-05",
   "calendar_end": "2028-12-31",
   "initial_event_id": "2026-02-28-us-israel-war-begins",
   "methodology_notes": [
@@ -11304,6 +11304,120 @@
       "search_aliases": ["Qeshm defensive strikes", "US strikes Qeshm Island", "November 2 Hormuz strikes", "Qatar mediation Iran US", "surface-to-air missiles Qeshm"],
       "reviewed_at": "2026-11-03",
       "research_note": "The strike account relies on officials speaking anonymously and Iranian reports of explosions, but was corroborated by AP and Reuters. No casualty or damage figure is recorded because none was independently established in the sources reviewed."
+    },
+    {
+      "id": "2026-10-27-netanyahu-bloc-loses-majority",
+      "date_start": "2026-10-27",
+      "title": "Netanyahu's bloc loses its majority in Israel's election",
+      "summary": "Israel's election leaves Benjamin Netanyahu's bloc with 53 of the Knesset's 120 seats, below the 61 needed for a majority. Gadi Eisenkot's opposition bloc wins 48 and the two Arab-led parties 19. Netanyahu remains caretaker prime minister while the parties try to form a government.",
+      "context": "The parliamentary setback affects the political position of the Israeli leader directing the country's wartime policy. It does not by itself settle who will govern or establish a change in Israel's policy toward Iran, Gaza or Lebanon.",
+      "details": [
+        "Voting took place on 27 October. The completed count reported on 30 October confirmed that neither Netanyahu's allies nor Eisenkot's bloc had a majority. Likud remained the largest individual party with 27 seats, so losing the governing bloc's majority did not immediately remove Netanyahu from office.",
+        "By 5 November, President Isaac Herzog was consulting parties about a candidate to form a government. Reuters reported that Netanyahu's longstanding ally United Torah Judaism declined to endorse a candidate and that an Arab-led party endorsed Eisenkot. Coalition formation remained unresolved, leaving Netanyahu in charge as caretaker."
+      ],
+      "key_facts": [
+        { "label": "Election", "value": "27 October 2026; completed count reported 30 October" },
+        { "label": "Seats", "value": "Netanyahu bloc 53; Eisenkot bloc 48; Arab-led parties 19" },
+        { "label": "Majority", "value": "61 of 120 Knesset seats" },
+        { "label": "Status on 5 November", "value": "Netanyahu remains caretaker prime minister; no new coalition agreed" }
+      ],
+      "theatres": ["Israel"],
+      "actors": ["Benjamin Netanyahu", "Likud", "Gadi Eisenkot", "Isaac Herzog", "Israeli Central Elections Committee"],
+      "category": ["elections", "leadership", "domestic_politics"],
+      "verification": "confirmed",
+      "importance": 4,
+      "theme": "context",
+      "sources": [
+        {
+          "publisher": "Associated Press",
+          "title": "Difficult negotiations lie ahead in Israel after Netanyahu's bloc lost its parliamentary majority",
+          "url": "https://apnews.com/article/israel-elections-netanyahu-results-eisenkot-arabs-3a793c0d07fdfe515390524b849d8674"
+        },
+        {
+          "publisher": "The Times of Israel",
+          "title": "With all votes counted, Netanyahu's bloc has 53 seats, Eisenkot's 48, Arab parties 19",
+          "url": "https://www.timesofisrael.com/with-all-votes-counted-netanyahus-bloc-at-53-seats-eisenkots-48-arab-parties-19/"
+        },
+        {
+          "publisher": "Reuters via Investing.com",
+          "title": "Netanyahu's position weakens as ultra-Orthodox party withholds support",
+          "url": "https://www.investing.com/news/world-news/netanyahus-position-weakens-as-ultraorthodox-party-withholds-support-5003241"
+        }
+      ],
+      "media": [
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/watch?v=-8-YOtPFgI4",
+          "caption": "AP's Sam Mednick explains the completed election count and coalition deadlock, filmed 30 October 2026 and uploaded by AP Archive on 4 November.",
+          "credit": "Associated Press / AP Archive",
+          "source_url": "https://www.youtube.com/watch?v=-8-YOtPFgI4"
+        }
+      ],
+      "search_aliases": ["Netanyahu election defeat", "Netanyahu loses majority", "Israel election 2026", "Israeli election", "Knesset 53 seats", "Eisenkot", "Eizenkot", "caretaker government"],
+      "reviewed_at": "2026-11-05",
+      "research_note": "The timeline date is polling day. The completed count and coalition status are checked against AP, The Times of Israel and Reuters through 5 November. No successor or change of government is claimed."
+    },
+    {
+      "id": "2026-11-03-republicans-lose-congress-iran-war-fallout",
+      "date_start": "2026-11-03",
+      "date_end": "2026-11-04",
+      "title": "Republicans lose House and Senate; Trump defends Iran war after midterm defeat",
+      "summary": "Democrats win both chambers of Congress in the U.S. midterm elections, ending Republican control of the incoming Congress. Trump acknowledges that the Iran war contributed to his party's losses, but on 4 November defends the decision to fight and says he would make it again.",
+      "context": "The result adds congressional pressure to a conflict already central to fuel prices and the cost of living. The incoming Democratic majorities take office in January 2027; the election outcome and Trump's response do not themselves announce a ceasefire or a new military operation.",
+      "details": [
+        "Reuters and AP reported that Democrats won the House of Representatives and Senate in the 3 November vote. Reuters identified the unpopular Iran war, high living costs and wider dissatisfaction with Trump's administration as important factors. Trump accepted the outcome; final seat totals are omitted while individual races are still being resolved.",
+        "On 4 November, Trump acknowledged the war's electoral cost in interviews and remarks to reporters, while defending it as necessary to prevent Iran from obtaining a nuclear weapon. Reuters quoted him saying, 'I would have done nothing different.' That is his stated justification and assessment of the campaign, rather than independent confirmation of its results.",
+        "Vice President JD Vance attributed the defeat more directly to the war in a public social-media post. AP's 5 November follow-up described continuing uncertainty over whether Trump would negotiate, maintain the blockade or resume wider strikes. His public defence of the war did not resolve which course he would take next."
+      ],
+      "theatres": ["United States", "Iran"],
+      "actors": ["Donald Trump", "JD Vance", "Republican Party", "Democratic Party", "U.S. Congress"],
+      "category": ["elections", "domestic_politics", "political_pressure", "Iran_war", "official_statement"],
+      "verification": "confirmed",
+      "importance": 4,
+      "theme": "context",
+      "sources": [
+        {
+          "publisher": "Reuters via Investing.com",
+          "title": "Democrats seize Congress in sweeping midterm repudiation of Trump",
+          "url": "https://www.investing.com/news/politics-news/democrats-seize-control-of-congress-in-sweeping-midterm-repudiation-of-trump-4997528"
+        },
+        {
+          "publisher": "Reuters via Investing.com",
+          "title": "Trump acknowledges role of Iran war in Democratic sweep in midterm elections",
+          "url": "https://www.investing.com/news/politics-news/trump-acknowledges-iran-played-role-in-republican-midterm-losses-4997350"
+        },
+        {
+          "publisher": "Reuters via MarketScreener",
+          "title": "Trump says Republicans harmed by Iran war, inability to 'transfer the love' for him",
+          "url": "https://ca.marketscreener.com/news/trump-says-republicans-harmed-by-iran-war-inability-to-transfer-the-love-for-him-ce785fdfde88f524"
+        },
+        {
+          "publisher": "Associated Press",
+          "title": "After midterm loss, Trump is left to weigh his next move in Iran war that contributed to GOP debacle",
+          "url": "https://apnews.com/article/trump-midterm-elections-iran-e92751dbcdf940c486c8d1e57dafbe99"
+        }
+      ],
+      "media": [
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/watch?v=-mqnBKkrpAU",
+          "caption": "Associated Press video of Trump's 4 November response to JD Vance blaming the midterm losses on the Iran war.",
+          "credit": "Associated Press",
+          "source_url": "https://www.youtube.com/watch?v=-mqnBKkrpAU"
+        }
+      ],
+      "relationships": [
+        {
+          "to": "2026-10-01-us-carrier-build-up-trump-renewed-threats",
+          "type": "contextual_thread",
+          "label": "The post-midterm decision point",
+          "summary": "Trump's earlier threats tied possible renewed Iran operations to the midterm timetable. This entry records the election result and his subsequent defence of the war without treating either as a new strike order.",
+          "confidence": "documented"
+        }
+      ],
+      "search_aliases": ["Trump loses midterms", "Trump midterm defeat", "Republicans lose Congress", "Democrats win House and Senate", "US midterm elections 2026", "Vance blames Iran war", "Iran war worth it", "post-midterm Iran remarks"],
+      "reviewed_at": "2026-11-05",
+      "research_note": "This single point groups the 3 November election with Trump's and Vance's 4 November reactions. Control of both chambers and Trump's remarks are corroborated by Reuters and AP. The war's exact share of responsibility for the result is not independently quantifiable. No distinct new Trump Iran-policy announcement on 5 November was established in the reporting reviewed."
     }
   ]
 }
